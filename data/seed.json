@@ -1,0 +1,3694 @@
+{
+  "meta": {
+    "source": "https://corechamps.com",
+    "importedAt": "2026-04-30T16:40:09.534Z",
+    "runtimeDependenciesRemoved": [
+      "Shopify storefront APIs",
+      "remote CDN runtime images",
+      "Shopify scripts",
+      "tracking scripts",
+      "theme CSS"
+    ],
+    "audit": {
+      "platform": "Shopify storefront",
+      "observedNavigation": [
+        "Home",
+        "Supplements",
+        "Categories",
+        "Authenticity Check",
+        "Cart",
+        "Account",
+        "Footer company pages"
+      ],
+      "designSystem": {
+        "colors": [
+          "black",
+          "white",
+          "red accent",
+          "light gray surfaces"
+        ],
+        "typography": "Condensed athletic display headings with practical sans body copy",
+        "imagery": "Supplement pack shots, gym-performance banners, red and black brand energy"
+      }
+    }
+  },
+  "settings": {
+    "storeName": "CORE CHAMPS",
+    "tagline": "Bred To Be A Champion",
+    "email": "sales@corechamps.com",
+    "phone": "+1-802-227-2721",
+    "address": "1013, Centre Road, Wilmington, Delaware 19805",
+    "currency": "USD",
+    "taxRate": 0,
+    "shippingFlatRate": 0,
+    "heroTitle": "CORE CHAMPS",
+    "heroSubtitle": "Bred to be a champion",
+    "heroBody": "Science-based sports nutrition for protein, pre-workout, recovery, and daily performance.",
+    "heroImage": "/media/imported/site-core-champs-logo-main-retina-2x-180x107-69fb6e80.png"
+  },
+  "navigation": {
+    "primary": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Supplements",
+        "href": "/collections/protein"
+      },
+      {
+        "label": "Categories",
+        "href": "/collections/muscle-building"
+      },
+      {
+        "label": "Authenticity Check",
+        "href": "/pages/global-presence"
+      }
+    ],
+    "categories": [
+      {
+        "label": "Protein",
+        "href": "/collections/protein"
+      },
+      {
+        "label": "Muscle Building",
+        "href": "/collections/muscle-building"
+      },
+      {
+        "label": "Energy & Performance",
+        "href": "/collections/pre-workout"
+      },
+      {
+        "label": "Weight Management",
+        "href": "/collections/weight-management"
+      },
+      {
+        "label": "Recovery",
+        "href": "/collections/recovery"
+      },
+      {
+        "label": "Healthy Lifestyle",
+        "href": "/collections/healthy-wellness"
+      },
+      {
+        "label": "BCAAs & EAAs",
+        "href": "/collections/bcaas-eaas"
+      }
+    ],
+    "footer": [
+      {
+        "label": "Contact Us",
+        "href": "/pages/contact"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/pages/privacy-policy"
+      },
+      {
+        "label": "Return Policy",
+        "href": "/pages/return-policy"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/pages/terms-conditions"
+      },
+      {
+        "label": "Global Presence",
+        "href": "/pages/global-presence"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "contact",
+      "title": "Contact Us",
+      "summary": "Reach the Core Champs support team.",
+      "body": "Store information: 1013, Centre Road, Wilmington, Delaware 19805. Phone: +1-802-227-2721. Email: sales@corechamps.com or info@corechamps.com."
+    },
+    {
+      "slug": "privacy-policy",
+      "title": "Privacy Policy",
+      "summary": "Customer privacy and data handling.",
+      "body": "This standalone clone keeps storefront and admin data locally unless a client connects their own backend. Do not add tracking scripts without consent."
+    },
+    {
+      "slug": "return-policy",
+      "title": "Return Policy",
+      "summary": "Returns and order support.",
+      "body": "Return requests can be reviewed by the store team. Products should remain sealed and in original condition unless otherwise approved by support."
+    },
+    {
+      "slug": "terms-conditions",
+      "title": "Terms & Conditions",
+      "summary": "Store terms and supplement disclaimer.",
+      "body": "These products are not intended to diagnose, treat, cure, or prevent disease. Consult a healthcare professional before starting any diet or exercise program."
+    },
+    {
+      "slug": "global-presence",
+      "title": "Global Presence",
+      "summary": "Regional storefront links.",
+      "body": "Core Champs references United States, Europe, Middle East, and Asia regional experiences. This standalone site keeps those references as editable content."
+    }
+  ],
+  "collections": [
+    {
+      "slug": "protein",
+      "title": "Protein",
+      "subtitle": "Protein is the spice of muscle life.",
+      "description": "Protein is the spice of muscle life.",
+      "productSlugs": [
+        "isolate-whey-2lbs",
+        "isolate-whey",
+        "whey-2lbs",
+        "whey",
+        "core-champs-isolate-100-whey-protein-isolate-2lbs-30-servings"
+      ]
+    },
+    {
+      "slug": "muscle-building",
+      "title": "Muscle Building",
+      "subtitle": "The secret ingredient to muscle magic.",
+      "description": "The secret ingredient to muscle magic.",
+      "productSlugs": [
+        "bcaa-powder-7000-mg",
+        "creatine-5000mg",
+        "isolate-whey-2lbs",
+        "isolate-whey",
+        "l-arginine-1000mg",
+        "mass-gainer-6-lbs",
+        "mass-gainer-15-lbs",
+        "whey-2lbs",
+        "whey",
+        "core-champs-isolate-100-whey-protein-isolate-2lbs-30-servings",
+        "beta-alanine"
+      ]
+    },
+    {
+      "slug": "pre-workout",
+      "title": "Energy & Performance",
+      "subtitle": "Pre-workout fuel for focused training.",
+      "description": "Pre-workout fuel for focused training.",
+      "productSlugs": [
+        "agmatine-750mg",
+        "l-arginine-1000mg",
+        "l-carnitine-3000-new-packing",
+        "l-citrulline",
+        "nitric-oxide",
+        "rdx-pre-workout"
+      ]
+    },
+    {
+      "slug": "weight-management",
+      "title": "Weight Management",
+      "subtitle": "Support for lean goals and daily discipline.",
+      "description": "Support for lean goals and daily discipline.",
+      "productSlugs": [
+        "cla-conjugated-linoleic-acid",
+        "isolate-whey-2lbs",
+        "isolate-whey",
+        "l-carnitine-3000-new-packing",
+        "mass-gainer-6-lbs",
+        "mass-gainer-15-lbs",
+        "shred-n-burn"
+      ]
+    },
+    {
+      "slug": "recovery",
+      "title": "Recovery",
+      "subtitle": "Amino acids and daily recovery support.",
+      "description": "Amino acids and daily recovery support.",
+      "productSlugs": [
+        "bcaa-powder-7000-mg",
+        "creatine-5000mg",
+        "eaa-essential-amino-acids",
+        "glutamine",
+        "joint-support",
+        "l-arginine-1000mg",
+        "liver-support",
+        "multivitamin-90-tablets-usa-version",
+        "tribulus",
+        "zmb6",
+        "beta-alanine"
+      ]
+    },
+    {
+      "slug": "healthy-wellness",
+      "title": "Healthy Lifestyle",
+      "subtitle": "Vitamin and mineral supplements for daily health.",
+      "description": "Vitamin and mineral supplements for daily health.",
+      "productSlugs": [
+        "joint-support",
+        "liver-support",
+        "multivitamin-90-tablets-usa-version",
+        "omega-3-usa-version",
+        "testro-gen",
+        "tribulus",
+        "zmb6"
+      ]
+    },
+    {
+      "slug": "bcaas-eaas",
+      "title": "BCAAs & EAAs",
+      "subtitle": "Amino acids for training and recovery.",
+      "description": "Amino acids for training and recovery.",
+      "productSlugs": [
+        "bcaa-powder-7000-mg",
+        "eaa-essential-amino-acids",
+        "glutamine",
+        "l-arginine-1000mg",
+        "beef-aminos"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "9723329151250",
+      "slug": "agmatine-750mg",
+      "title": "AGMATINE 750MG",
+      "vendor": "CORE CHAMPS",
+      "type": "AGMATINE",
+      "tags": [
+        "Boost Energy",
+        "Enhance Performance",
+        "Increase Performance",
+        "Muscle Pump",
+        "Pre-workout",
+        "Vascularity"
+      ],
+      "price": 20.89,
+      "compareAtPrice": 20.89,
+      "available": false,
+      "summary": "CORE CHAMPS AGMATINE 750MG As a regulator of nitric oxide synthesis, Agmatine acts as a vasodilator, promoting the dilation of blood vessels. It can enhance blood...",
+      "description": "CORE CHAMPS AGMATINE 750MG\nAs a regulator of nitric oxide synthesis, Agmatine acts as a vasodilator, promoting the dilation of blood vessels. It can enhance blood flow, potentially benefit cardiovascular health, and provide support for individuals looking to maintain optimal blood circulation. It enhances muscle pumps and supports recovery from intense workouts.\nSUGGESTED USE:\nTake as a dietary supplement; mix 1 scoop with 4–6 oz of water or with your preferred pre-workout beverage 20 minutes before the training.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant, nursing, or taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use if the outer seal is broken. Store at ambient temperature, away from direct sunlight. Always consult a healthcare professional before starting any diet or exercise program. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/agmatine-750mg-core-champs-agmatine-750mg-54645643-fe8e-4e83-9e43-aed-b86899b9.png",
+          "alt": "AGMATINE 750MG",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "/media/imported/agmatine-750mg-core-champs-agmatine-750mg-s2-5614f93b.png",
+          "alt": "AGMATINE 750MG",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "50038292611346",
+          "title": "Default Title",
+          "sku": "MR-60633287",
+          "option1": "Default Title",
+          "price": 20.89,
+          "compareAtPrice": 20.89,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2024-07-29T09:33:49-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "9544496742674",
+      "slug": "bcaa-powder-7000-mg",
+      "title": "BCAA POWDER 7000 MG",
+      "vendor": "CORE CHAMPS",
+      "type": "AMINO ACID",
+      "tags": [
+        "Amino Acids",
+        "BCAA",
+        "Build Muscle",
+        "Recovery"
+      ],
+      "price": 23.74,
+      "compareAtPrice": 23.74,
+      "available": true,
+      "summary": "CORE CHAMPS BCAA 7000 MG BCAAs are essential for muscle growth and repair. Leucine, one of the three amino acids in BCAAs, is particularly important for...",
+      "description": "CORE CHAMPS BCAA 7000 MG\nBCAAs are essential for muscle growth and repair. Leucine, one of the three amino acids in BCAAs, is particularly important for building muscle. Studies have shown that supplementing with BCAAs can help promote muscle growth and reduce muscle breakdown. Intense exercise can lead to muscle soreness and fatigue. BCAAs can help alleviate muscle soreness and reduce muscle damage by promoting muscle protein synthesis and reducing muscle breakdown. CORE CHAMPS BCAA can help enhance muscle growth, reduce muscle soreness, improve exercise performance, and support immune system function.\nSUGGESTED USE:\nAs a dietary Supplement, take 1 scoop (9 gram) with 8–12 oz. of cold water in a glass or shaker cup. Consume during exercise on training days or throughout the day on non-training days.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish, crustaceans, shellfish oils, and wheat products.\nWARNING:\nTHIS PRODUCT IS ONLY INTENDED FOR HEALTHY ADULTS, 18 YEARS OF AGE OR OLDER. Do not use it if you are pregnant, nursing, taking any prescribed medicine or supplements, or if you have a medical condition. Before taking this product, consult a licensed, qualified, health care professional, especially if you are taking any other dietary supplement, prescription drug or over-the-counter medication; or if, you suspect you have or have been treated for, diagnosed with or have a family history of, any medical condition. This product contains caffeine and should not be used in combination with caffeine or stimulants from any sources. Do not use if safety seal is broken or missing.\nStore it in a cool, dry place. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/bcaa-powder-7000-mg-bcaa-blue-raspberry-ice-236af5b1.png",
+          "alt": "BCAA POWDER 7000 MG",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/bcaa-powder-7000-mg-bcaa-fruit-punch-09f8fa80.png",
+          "alt": "BCAA POWDER 7000 MG",
+          "width": 1200,
+          "height": 1500
+        }
+      ],
+      "variants": [
+        {
+          "id": "49952160350482",
+          "title": "BLUE RASPBERRY ICE",
+          "sku": "MR-53515699",
+          "option1": "BLUE RASPBERRY ICE",
+          "price": 23.74,
+          "compareAtPrice": 23.74,
+          "available": true
+        },
+        {
+          "id": "49402535051538",
+          "title": "FRUIT PUNCH",
+          "sku": "MR-53515729",
+          "option1": "FRUIT PUNCH",
+          "price": 23.74,
+          "compareAtPrice": 23.74,
+          "available": true
+        },
+        {
+          "id": "49402535084306",
+          "title": "WATERMELON",
+          "sku": "MR-53515705",
+          "option1": "WATERMELON",
+          "price": 23.74,
+          "compareAtPrice": 23.74,
+          "available": true
+        },
+        {
+          "id": "49952160383250",
+          "title": "GLACIAL GRAPE",
+          "sku": "MR-53515750",
+          "option1": "GLACIAL GRAPE",
+          "price": 23.74,
+          "compareAtPrice": 23.74,
+          "available": true
+        },
+        {
+          "id": "49952160416018",
+          "title": "LEMON LIME",
+          "sku": "MR-53515736",
+          "option1": "LEMON LIME",
+          "price": 23.74,
+          "compareAtPrice": 23.74,
+          "available": true
+        },
+        {
+          "id": "49952160448786",
+          "title": "SMASH APPLE",
+          "sku": "MR-53515743",
+          "option1": "SMASH APPLE",
+          "price": 23.74,
+          "compareAtPrice": 23.74,
+          "available": true
+        },
+        {
+          "id": "49952160481554",
+          "title": "STRAWBERRY KIWI",
+          "sku": "MR-53515712",
+          "option1": "STRAWBERRY KIWI",
+          "price": 23.74,
+          "compareAtPrice": 23.74,
+          "available": true
+        },
+        {
+          "id": "51232174375186",
+          "title": "ZESTY THUNDER",
+          "sku": "",
+          "option1": "ZESTY THUNDER",
+          "price": 23.74,
+          "compareAtPrice": 23.74,
+          "available": true
+        },
+        {
+          "id": "51232174407954",
+          "title": "BLUE RASPBERRY RUSH",
+          "sku": "",
+          "option1": "BLUE RASPBERRY RUSH",
+          "price": 23.74,
+          "compareAtPrice": 23.74,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2024-06-03T06:29:29-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8847736406290",
+      "slug": "cla-conjugated-linoleic-acid",
+      "title": "CLA (Conjugated Linoleic Acid)",
+      "vendor": "CORE CHAMPS",
+      "type": "CLA",
+      "tags": [
+        "CLA",
+        "Conjugated Linoleic Acid",
+        "Fat Loss",
+        "Weight Loss",
+        "Weight Management"
+      ],
+      "price": 18.99,
+      "compareAtPrice": 18.99,
+      "available": true,
+      "summary": "CORE CHAMPS CLA 1000MG CORE CHAMPS CLA features a 1,000 mg blend of Conjugated Linoleic Acid, Extra Virgin Olive Oil, and Avocado Oil per serving to...",
+      "description": "CORE CHAMPS CLA 1000MG\nCORE CHAMPS CLA features a 1,000 mg blend of Conjugated Linoleic Acid, Extra Virgin Olive Oil, and Avocado Oil per serving to help support weight loss and maintain lean muscle. Conjugated Linoleic Acid (CLA) supports maintaining lean muscle while reducing fat. This natural supplement works by stimulating one’s metabolism. With proper exercise and a healthy diet, supplementing with CLA supports fat loss and increases muscle\nConjugated Linoleic Acid (CLA) rapidly becoming an essential supplement for many fitness enthusiasts, Encouraging the human body to use existing FAT for energy and helping to Reduce Fat storage.\nSUGGESTED USE:\nTake 1 Softgel of CORE CHAMPS CLA with your meals or use as directed by a physician or licensed nutritionist.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant, nursing, or nursing or if you are taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use if the outer seal is broken. Store at ambient temperature, away from direct sunlight. Always consult a healthcare professional before starting any diet or exercise program. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/cla-conjugated-linoleic-acid-cla-transparent-7b5ad584.png",
+          "alt": "CLA (Conjugated Linoleic Acid)",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "src": "/media/imported/cla-conjugated-linoleic-acid-core-champs-cla-1000mg-120-softgels-1-7bc2b643.png",
+          "alt": "CLA (Conjugated Linoleic Acid)",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47297042415890",
+          "title": "Default Title",
+          "sku": "MR-33068191",
+          "option1": "Default Title",
+          "price": 18.99,
+          "compareAtPrice": 18.99,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2023-10-28T11:02:35-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8847760064786",
+      "slug": "creatine-5000mg",
+      "title": "CREATINE 5000MG",
+      "vendor": "CORE CHAMPS",
+      "type": "CREATINE",
+      "tags": [
+        "Build Muscle",
+        "Creatine",
+        "Creatine Monohydrate",
+        "Micronized Creatine",
+        "Recovery"
+      ],
+      "price": 18.99,
+      "compareAtPrice": 18.99,
+      "available": true,
+      "summary": "CORE CHAMPS CREATINE 5000MG CORE CHAMPS Creatine Monohydrate is 100% pure, flavorless, micronized creatine monohydrate with no fillers or additives. Creatine is a naturally occurring molecule...",
+      "description": "CORE CHAMPS CREATINE 5000MG\nCORE CHAMPS Creatine Monohydrate is 100% pure, flavorless, micronized creatine monohydrate with no fillers or additives. Creatine is a naturally occurring molecule in the body that plays a key role in explosive energy metabolism. It helps to drive periods of short burst power output; like the first few reps in a set, or the explosive drive from the starting blocks. During exercise, intramuscular stores of creatine reload ATP molecules, the “energy machines of muscle”, for last between-set recovery. Unfortunately, the creatine produced by the body is available only in limited supply. Supplementing with CORE CHAMPS Creatine Monohydrate helps to supersaturate muscles with rapid-fueling creatine – improved muscle power, explosive strength, and rapid recovery.\nSUGGESTED USE:\nTake as a dietary supplement, mix 1 scoop to 8-10 oz of water, preferably prior to exercise.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant, nursing or if you are taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use if the outer seal is broken. Store at ambient temperature, away from direct sunlight. Always consult a healthcare professional before starting any diet or exercise program. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/creatine-5000mg-creatine-4609cd6c.png",
+          "alt": "CREATINE 5000MG",
+          "width": 1000,
+          "height": 1250
+        },
+        {
+          "src": "/media/imported/creatine-5000mg-core-champs-creatine-5000mg-1-479c3517.png",
+          "alt": "CREATINE 5000MG",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47297091502354",
+          "title": "Default Title",
+          "sku": "MR-33068467",
+          "option1": "Default Title",
+          "price": 18.99,
+          "compareAtPrice": 18.99,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2023-10-28T11:12:20-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8852289519890",
+      "slug": "eaa-essential-amino-acids",
+      "title": "EAA (ESSENTIAL AMINO ACIDS)",
+      "vendor": "CORE CHAMPS",
+      "type": "EAA",
+      "tags": [
+        "Amino Acids",
+        "EAA",
+        "Recovery"
+      ],
+      "price": 31.34,
+      "compareAtPrice": 31.34,
+      "available": false,
+      "summary": "CORE CHAMPS EAA Revitalize and Recharge with CORE CHAMPS Essential Amino Acid Supplement! Packed with all nine vital amino acids, this powerful formula supports muscle repair,...",
+      "description": "CORE CHAMPS EAA\nRevitalize and Recharge with CORE CHAMPS Essential Amino Acid Supplement! Packed with all nine vital amino acids, this powerful formula supports muscle repair, enhances recovery, and boosts overall performance, this premium supplement aids in better nutrient absorption, immune support, and healthy tissue maintenance. Give your body the essential fuel it needs to thrive. Whether you're pushing through workouts or hectic daily life, this supplement is your natural energy source!\nCORE CHAMPS EAA packed with all 9 Essential Amino Acids (EAAs), which is critical for muscle protein synthesis, muscle growth, muscle preservation, enhanced endurance and recovery.\nSUGGESTED USE:\nMix 1 serving (13.5g) of CORE CHAMPS EAA with 16-20 oz. of cold water, consume it before meal or training. CORE CHAMPS EAA can be taken prior to workout, during workout and post workout for maximum efficacy. It may also be used on non-training days.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant, nursing, or if you are taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use if the outer seal is broken. Store at ambient temperature, away from direct sunlight. Always consult a healthcare professional before starting any diet or exercise program. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/eaa-essential-amino-acids-eaa-fruit-punch-transparent-5e647c5e.png",
+          "alt": "EAA (ESSENTIAL AMINO ACIDS)",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/eaa-essential-amino-acids-core-champs-eaa-tropical-fruit-d6707577.png",
+          "alt": "EAA (ESSENTIAL AMINO ACIDS)",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47305877979410",
+          "title": "TROPICAL FRUIT",
+          "sku": "MR-53515408",
+          "option1": "TROPICAL FRUIT",
+          "price": 31.34,
+          "compareAtPrice": 31.34,
+          "available": false
+        },
+        {
+          "id": "47305877913874",
+          "title": "BLUE RASPBERRY",
+          "sku": "MR-53515767",
+          "option1": "BLUE RASPBERRY",
+          "price": 31.34,
+          "compareAtPrice": 31.34,
+          "available": false
+        },
+        {
+          "id": "49953819427090",
+          "title": "WATERMELON",
+          "sku": "MR-53515774",
+          "option1": "WATERMELON",
+          "price": 31.34,
+          "compareAtPrice": 31.34,
+          "available": false
+        },
+        {
+          "id": "47305877782802",
+          "title": "GREEN APPLE",
+          "sku": "MR-53515392",
+          "option1": "GREEN APPLE",
+          "price": 31.34,
+          "compareAtPrice": 31.34,
+          "available": false
+        },
+        {
+          "id": "47305877815570",
+          "title": "KIWI LEMON",
+          "sku": "MR-53515415",
+          "option1": "KIWI LEMON",
+          "price": 31.34,
+          "compareAtPrice": 31.34,
+          "available": false
+        },
+        {
+          "id": "47305877848338",
+          "title": "LEMON LIME",
+          "sku": "MR-53515385",
+          "option1": "LEMON LIME",
+          "price": 31.34,
+          "compareAtPrice": 31.34,
+          "available": false
+        },
+        {
+          "id": "47305877881106",
+          "title": "MANGO",
+          "sku": "MR-53515361",
+          "option1": "MANGO",
+          "price": 31.34,
+          "compareAtPrice": 31.34,
+          "available": false
+        },
+        {
+          "id": "47305877946642",
+          "title": "COCONUT",
+          "sku": "MR-53515378",
+          "option1": "COCONUT",
+          "price": 31.34,
+          "compareAtPrice": 31.34,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2023-10-30T03:56:18-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8852327301394",
+      "slug": "glutamine",
+      "title": "GLUTAMINE",
+      "vendor": "CORE CHAMPS",
+      "type": "GLUTAMINE",
+      "tags": [
+        "Amino Acids",
+        "Glutamine",
+        "Recovery"
+      ],
+      "price": 17.09,
+      "compareAtPrice": 17.09,
+      "available": false,
+      "summary": "CORE CHAMPS GLUTAMINE CORE CHAMPS Glutamine plays a crucial role in promoting overall health and well-being. As one of the most abundant amino acids in the...",
+      "description": "CORE CHAMPS GLUTAMINE\nCORE CHAMPS Glutamine plays a crucial role in promoting overall health and well-being. As one of the most abundant amino acids in the body, glutamine supports various essential functions. It aids in muscle recovery and repair, making it a go-to supplement for athletes and fitness enthusiasts. Additionally, glutamine helps to strengthen the immune system, enhance gut health, and support optimal cellular function. Incorporating a glutamine supplement into your daily routine can provide numerous benefits, supporting your fitness goals and overall vitality. Boost your body's resilience and performance with the power of glutamine.\nGlutamine is an important energy source for intestinal and immune cells; it increases protein synthesis and promotes glycogen replenishment.\nSUGGESTED USE:\nTake as a dietary supplement, add 1 scoop to 8–10 oz of water, your favorite beverage, or pre- or post-workout drinks.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant, nursing or if you are taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use if the outer seal is broken. Store at ambient temperature, away from direct sunlight. Always consult a healthcare professional before starting any diet or exercise program. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/glutamine-core-champs-glutamine-fcc303a6.png",
+          "alt": "GLUTAMINE",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "/media/imported/glutamine-core-champs-glutamine-side-1-da227e3d.png",
+          "alt": "GLUTAMINE",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47305941057810",
+          "title": "Default Title",
+          "sku": "MR-53515200",
+          "option1": "Default Title",
+          "price": 17.09,
+          "compareAtPrice": 17.09,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2023-10-30T04:18:59-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "9703510180114",
+      "slug": "isolate-whey-2lbs",
+      "title": "ISOLATE WHEY 2LBS",
+      "vendor": "CORE CHAMPS",
+      "type": "ISOLATE PROTEIN",
+      "tags": [
+        "Isolate",
+        "Isolate Protein",
+        "Isolate Whey",
+        "Weight Management"
+      ],
+      "price": 37.99,
+      "compareAtPrice": 37.99,
+      "available": true,
+      "summary": "CORE CHAMPS 100% ISOLATE WHEY PROTEIN Enhance your muscle building with CORE CHAMPS ISOLATE - the ultimate fuel for your fitness journey. If your goal is...",
+      "description": "CORE CHAMPS 100% ISOLATE WHEY PROTEIN\nEnhance your muscle building with CORE CHAMPS ISOLATE - the ultimate fuel for your fitness journey. If your goal is to get lean muscle and strength, CORE CHAMPS ISOLATE is your perfect workout support. Packed with 25 grams of protein and all the essential amino acids, this powerful supplement can support even the most serious resistance-training programs. You can be confident that every scoop is pure muscle-building gold.\nSUGGESTED USE:\nAs a protein supplement, mix 1 scoop (30g) of CORE CHAMPS ISOLATE with 8-10 oz of\ncold water or milk and mix thoroughly in shaker or blender. For the best results, spread protein usages between several smaller meals throughout the day.\nALLERGEN INFORMATION:\nContain Milk and Soy. Made in a facility that also processes sesame, egg, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant or nursing or if you are taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use if the outer seal is broken. Store in a cool dry place. Always consult a healthcare professional before starting any diet or exercise program.",
+      "images": [
+        {
+          "src": "/media/imported/isolate-whey-2lbs-core-champs-whey-isolate-2-lbs-delicious-chocolate-bebc25fd.png",
+          "alt": "ISOLATE WHEY 2LBS",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "/media/imported/isolate-whey-2lbs-core-champs-whey-isolate-2-lbs-chocolate-peanut-butter-3a1350e9.png",
+          "alt": "ISOLATE WHEY 2LBS",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "49954073149714",
+          "title": "DELICIOUS CHOCOLATE",
+          "sku": "MR-60633003",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49954073182482",
+          "title": "CHOCOLATE PEANUT BUTTER",
+          "sku": "MR-60633041",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49954073215250",
+          "title": "SMOOTH VANILLA",
+          "sku": "MR-60633010",
+          "option1": "SMOOTH VANILLA",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49954073248018",
+          "title": "COOKIES & CREAM",
+          "sku": "MR-60633027",
+          "option1": "COOKIES & CREAM",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49954073280786",
+          "title": "BIRTHDAY CAKE",
+          "sku": "MR-60633034",
+          "option1": "BIRTHDAY CAKE",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49954073313554",
+          "title": "STRAWBERRY BANANA",
+          "sku": "MR-60633058",
+          "option1": "STRAWBERRY BANANA",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49954073346322",
+          "title": "CARAMEL LATTE",
+          "sku": "MR-60633065",
+          "option1": "CARAMEL LATTE",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2024-07-19T11:12:49-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8853110817042",
+      "slug": "isolate-whey",
+      "title": "ISOLATE WHEY 4.41LBS",
+      "vendor": "CORE CHAMPS",
+      "type": "ISOLATE PROTEIN",
+      "tags": [
+        "Isolate",
+        "Isolate Protein",
+        "Isolate Whey",
+        "Weight Management"
+      ],
+      "price": 71.24,
+      "compareAtPrice": 71.24,
+      "available": true,
+      "summary": "CORE CHAMPS 100% ISOLATE WHEY PROTEIN Enhance your muscle building with CORE CHAMPS ISOLATE - the ultimate fuel for your fitness journey. If your goal is...",
+      "description": "CORE CHAMPS 100% ISOLATE WHEY PROTEIN\nEnhance your muscle building with CORE CHAMPS ISOLATE - the ultimate fuel for your fitness journey. If your goal is to get lean muscle and strength, CORE CHAMPS ISOLATE is your perfect workout support. Packed with 25 grams of protein and all the essential amino acids, this powerful supplement can support even the most serious resistance-training programs. You can be confident that every scoop is pure muscle-building gold.\nSUGGESTED USE:\nAs a protein supplement, mix 1 scoop (30g) of CORE CHAMPS ISOLATE with 8-10 oz of\ncold water or milk and mix thoroughly in shaker or blender. For the best results, spread protein usages between several smaller meals throughout the day.\nALLERGEN INFORMATION:\nContain Milk and Soy. Made in a facility that also processes sesame, egg, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant or nursing or if you are taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use if the outer seal is broken. Store in a cool dry place. Always consult a healthcare professional before starting any diet or exercise program.",
+      "images": [
+        {
+          "src": "/media/imported/isolate-whey-isolate-delicious-chocolate-transparent-462fe6ea.png",
+          "alt": "ISOLATE WHEY 4.41LBS",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/isolate-whey-isolate-choco-peanut-butter-927ae2e0.png",
+          "alt": "ISOLATE WHEY 4.41LBS",
+          "width": 1200,
+          "height": 1500
+        }
+      ],
+      "variants": [
+        {
+          "id": "47307054350610",
+          "title": "DELICIOUS CHOCOLATE",
+          "sku": "MR-53515613",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 71.24,
+          "compareAtPrice": 71.24,
+          "available": true
+        },
+        {
+          "id": "49954028716306",
+          "title": "CHOCOLATE PEANUT BUTTER",
+          "sku": "MR-53515651",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 71.24,
+          "compareAtPrice": 71.24,
+          "available": true
+        },
+        {
+          "id": "47307054448914",
+          "title": "SMOOTH VANILLA",
+          "sku": "MR-53515620",
+          "option1": "SMOOTH VANILLA",
+          "price": 71.24,
+          "compareAtPrice": 71.24,
+          "available": true
+        },
+        {
+          "id": "48058074235154",
+          "title": "COOKIES & CREAM",
+          "sku": "MR-53515637",
+          "option1": "COOKIES & CREAM",
+          "price": 71.24,
+          "compareAtPrice": 71.24,
+          "available": true
+        },
+        {
+          "id": "48058030620946",
+          "title": "BIRTHDAY CAKE",
+          "sku": "MR-53515644",
+          "option1": "BIRTHDAY CAKE",
+          "price": 71.24,
+          "compareAtPrice": 71.24,
+          "available": true
+        },
+        {
+          "id": "47307054481682",
+          "title": "STRAWBERRY BANANA",
+          "sku": "MR-53515668",
+          "option1": "STRAWBERRY BANANA",
+          "price": 71.24,
+          "compareAtPrice": 71.24,
+          "available": true
+        },
+        {
+          "id": "47307054514450",
+          "title": "CARAMEL LATTE",
+          "sku": "MR-53515675",
+          "option1": "CARAMEL LATTE",
+          "price": 71.24,
+          "compareAtPrice": 71.24,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2023-10-30T06:57:03-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8859191673106",
+      "slug": "joint-support",
+      "title": "JOINT SUPPORT",
+      "vendor": "CORE CHAMPS",
+      "type": "JOINT SUPPORT",
+      "tags": [
+        "Healthy Lifestyle",
+        "Joint Support",
+        "Post Workout",
+        "Recovery"
+      ],
+      "price": 21.84,
+      "compareAtPrice": 21.84,
+      "available": true,
+      "summary": "CORE CHAMPS JOINT SUPPORT Experience the relief and improved mobility that our Joint Support Formula offers. Nourish your joints and reclaim an active, pain-free lifestyle. Say...",
+      "description": "CORE CHAMPS JOINT SUPPORT\nExperience the relief and improved mobility that our Joint Support Formula offers. Nourish your joints and reclaim an active, pain-free lifestyle. Say goodbye to joint discomfort and embrace the freedom of movement with our trusted Joint Support Formula! Each ingredient is carefully selected for its efficacy and purity, ensuring you receive a premium product that you can trust to support your joint health.\nThis specially crafted formula also helps to restore strength, lubrication, and collagen in the joints, which can assist in improving mobility, flexibility, and the overall well-being of athletes.\nSupport Healthy Joint Function\nPromotes optimal Mobility\nReduces Inflammation\nRestore Strength & Lubrication\nSUGGESTED USE:\nTake two (2) tablets of CORE CHAMPS JOINT with your meals or use as directed by a physician or licensed nutritionist.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nFor adults only. Consult with your physician prior to use if you are pregnant or nursing or if you are taking medication (especially antihypertensives, anticoagulants, and antidiabetic drugs), have a medical condition (especially asthma or renal disease), or are planning to have surgery. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do Not exceed the recommended dosages. Do not use if the outer seal is broken. Store at ambient temperature, away from direct sunlight. Always consult a healthcare professional before starting any diet or exercise program. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/joint-support-joint-support-transparent-ea6d0a11.png",
+          "alt": "JOINT SUPPORT",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/joint-support-core-champs-joint-support-60-tablets-1-4de8fba7.png",
+          "alt": "JOINT SUPPORT",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47322895548690",
+          "title": "Default Title",
+          "sku": "MR-33068979",
+          "option1": "Default Title",
+          "price": 21.84,
+          "compareAtPrice": 21.84,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2023-11-01T05:25:49-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "9398076375314",
+      "slug": "l-arginine-1000mg",
+      "title": "L-ARGININE 1000MG",
+      "vendor": "CORE CHAMPS",
+      "type": "L-ARGININE",
+      "tags": [
+        "Amino Acids",
+        "Build Muscle",
+        "Energy Booster",
+        "L-Arginine",
+        "Muscle Pump",
+        "Recovery"
+      ],
+      "price": 17.09,
+      "compareAtPrice": 17.09,
+      "available": true,
+      "summary": "CORE CHAMPS L-ARGININE 1000MG CORE CHAMPS L-ARGININE: Unlocking the Power of Nitric Oxide for Optimal Performance and Wellness! Harness the power of L-Arginine and unlock the...",
+      "description": "CORE CHAMPS L-ARGININE 1000MG\nCORE CHAMPS L-ARGININE: Unlocking the Power of Nitric Oxide for Optimal Performance and Wellness! Harness the power of L-Arginine and unlock the benefits of enhanced nitric oxide production. Experience improved blood flow, enhanced exercise performance, and support for your cardiovascular health and immune system. Elevate your performance and well-being with our trusted L-Arginine supplement!\nSUGGESTED USE:\nTake 1 tablet daily as needed. Take between meals or at bedtime with at least 8 oz. of water or juice to facilitate absorption.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nFor adults only. Consult with your physician prior to use if you are pregnant or nursing or if you are taking medication (especially antihypertensives, anticoagulants, and antidiabetic drugs), have a medical condition (especially asthma or renal disease), or are planning to have surgery. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do Not exceed the recommended dosages. Do not use if the outer seal is broken. Store at ambient temperature, away from direct sunlight. Always consult a healthcare professional before starting any diet or exercise program. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/l-arginine-1000mg-l-arginine-transparent-7ec7b454.png",
+          "alt": "L-ARGININE 1000MG",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/l-arginine-1000mg-core-champs-l-arginine-120-side-2-c9746fa2.png",
+          "alt": "L-ARGININE 1000MG",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "48958221517074",
+          "title": "Default Title",
+          "sku": "850033068184",
+          "option1": "Default Title",
+          "price": 17.09,
+          "compareAtPrice": 17.09,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2024-04-29T10:54:27-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "9471488950546",
+      "slug": "l-carnitine-3000-new-packing",
+      "title": "L-CARNITINE 3000MG",
+      "vendor": "CORE CHAMPS",
+      "type": "L-CARNITINE",
+      "tags": [
+        "Fat Loss",
+        "L-Carnitine",
+        "Liquid L-Carnitine",
+        "Weight Loss",
+        "Weight Management"
+      ],
+      "price": 28.49,
+      "compareAtPrice": 28.49,
+      "available": false,
+      "summary": "CORE CHAMPS L-CARNITINE 3000 Core Champs L-Carnitine 3000 mg supplies you with a truly efficacious dosage, providing the perfect complement to any fat burners or diet...",
+      "description": "CORE CHAMPS L-CARNITINE 3000\nCore Champs L-Carnitine 3000 mg supplies you with a truly efficacious dosage, providing the perfect complement to any fat burners or diet regimen. Packed with 3000mg of liquid L-Carnitine per serving, it delivers one of the highest doses available.\nL-Carnitine (3000 mg) stimulates the use of fat as an energy source in the body, it slows down the time onset of fatigue symptoms and optimizes stamina during physical exertion. It also protects the muscles from protein catabolism.\nSUGGESTED USE:\nTake as a dietary Supplement, take 1 tablespoon of CORE CHAMPS L-Carnitine 3000mg or as directed by a physician or a licensed nutritionist. May be mixed with your favorite juice or beverage. Shake well before use.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nTHIS PRODUCT IS ONLY INTENDED FOR HEALTHY ADULTS, 18 YEARS OF AGE OR OLDER. Do not use it if you are pregnant, nursing, taking any prescribed medicine or supplements, or if you have a medical condition. Before taking this product, consult a licensed, qualified, health care professional, especially if you are taking any other dietary supplement, prescription drug or over-the-counter medication; or if, you suspect you have or have been treated for, diagnosed with or have a family history of, any medical condition. This product contains caffeine and should not be used in combination with caffeine or stimulants from any sources. Discontinue use 2 weeks prior to surgery. Immediately discontinue use and contact a medical doctor if you experience any adverse reaction to this product. Do not use this product continuously for more than 8 weeks. Do not use it if the safety seal is broken or missing. Store at ambient temperature. KEEP OUT OF REACH OF CHILDREN. This product is sold by weight, not volume. Some settling of powder occurs during shipping and handling, which may affect density of powder.",
+      "images": [
+        {
+          "src": "/media/imported/l-carnitine-3000-new-packing-core-champs-l-carnitine-3000mg-blue-raspberry-usa-2f3db4d2.png",
+          "alt": "L-CARNITINE 3000MG",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "/media/imported/l-carnitine-3000-new-packing-core-champs-l-carnitine-3000mg-mango-usa-0baa3e50.png",
+          "alt": "L-CARNITINE 3000MG",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "49193287844114",
+          "title": "BLUE RASPBERRY",
+          "sku": "MR-60633416",
+          "option1": "BLUE RASPBERRY",
+          "price": 28.49,
+          "compareAtPrice": 28.49,
+          "available": false
+        },
+        {
+          "id": "49193287876882",
+          "title": "MANGO",
+          "sku": "MR-33068108",
+          "option1": "MANGO",
+          "price": 28.49,
+          "compareAtPrice": 28.49,
+          "available": false
+        },
+        {
+          "id": "49193287909650",
+          "title": "GRAPE",
+          "sku": "MR-33068115",
+          "option1": "GRAPE",
+          "price": 28.49,
+          "compareAtPrice": 28.49,
+          "available": false
+        },
+        {
+          "id": "49193314746642",
+          "title": "FRUIT PUNCH",
+          "sku": "MR-33068085",
+          "option1": "FRUIT PUNCH",
+          "price": 28.49,
+          "compareAtPrice": 28.49,
+          "available": false
+        },
+        {
+          "id": "49193314779410",
+          "title": "MIXED BERRY",
+          "sku": "MR-33068092",
+          "option1": "MIXED BERRY",
+          "price": 28.49,
+          "compareAtPrice": 28.49,
+          "available": false
+        },
+        {
+          "id": "49193314812178",
+          "title": "WATERMELON",
+          "sku": "MR-33068955",
+          "option1": "WATERMELON",
+          "price": 28.49,
+          "compareAtPrice": 28.49,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2024-05-18T10:41:47-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8852342997266",
+      "slug": "l-citrulline",
+      "title": "L-CITRULLINE",
+      "vendor": "CORE CHAMPS",
+      "type": "L-CITRULLINE",
+      "tags": [
+        "Enhance Performance",
+        "L-Citrulline",
+        "Muscle Pump"
+      ],
+      "price": 23.74,
+      "compareAtPrice": 23.74,
+      "available": false,
+      "summary": "CORE CHAMPS L-CITRULLINE CORE CHAMPS L-CITRULLINE 2000MG supports vasodilation through nitric oxide production, helping to improve blood flow and muscle pumps during a workout. L-Citrulline Malate...",
+      "description": "CORE CHAMPS L-CITRULLINE\nCORE CHAMPS L-CITRULLINE 2000MG supports vasodilation through nitric oxide production, helping to improve blood flow and muscle pumps during a workout. L-Citrulline Malate is an amino acid that works to raise both arginine and ornithine plasma levels more efficiently and for longer periods of time than just l-arginine supplementation alone.\nL-Citrulline is one of the most promising pre-workout supplement ingredients for the purpose of building muscle.\nSUGGESTED USE:\nTake as a dietary supplement, add 1/2 (half) scoop to 8-10 oz of water, your favorite beverage, or pre-workout product.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, egg, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant or nursing or if you are taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use if the outer seal is broken. Store at ambient temperature, away from direct sunlight. Always consult a healthcare professional before starting any diet or exercise program. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/l-citrulline-core-champs-l-citrulline-2000mg-b89c6c1a.png",
+          "alt": "L-CITRULLINE",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "/media/imported/l-citrulline-core-champs-l-citrulline-2000mg-1-214304db.png",
+          "alt": "L-CITRULLINE",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47305979691282",
+          "title": "Default Title",
+          "sku": "MR-33068566",
+          "option1": "Default Title",
+          "price": 23.74,
+          "compareAtPrice": 23.74,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2023-10-30T04:28:56-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "9043211976978",
+      "slug": "liver-support",
+      "title": "LIVER SUPPORT",
+      "vendor": "CORE CHAMPS",
+      "type": "LIVER SUPPORT",
+      "tags": [
+        "Healthy Lifestyle",
+        "Libido Support",
+        "LIVER SUPPORT",
+        "Recovery",
+        "Test Support",
+        "Testosterone",
+        "Tribulus",
+        "ZMB6"
+      ],
+      "price": 20.89,
+      "compareAtPrice": 20.89,
+      "available": false,
+      "summary": "CORE CHAMPS LIVER SUPPORT CORE CHAMPS LIVER SUPPORT delivers unparalleled support to your hardworking liver - detoxifying, rejuvenating, and unlocking the true strength within. Unleash a...",
+      "description": "CORE CHAMPS LIVER SUPPORT\nCORE CHAMPS LIVER SUPPORT delivers unparalleled support to your hardworking liver - detoxifying, rejuvenating, and unlocking the true strength within. Unleash a cleaner, more vibrant you as you crush your goals with confidence. Designed exclusively for bodybuilders who demand nothing but the best, this potent formula will refresh and invigorate your liver so you can dominate each rep and achieve unrivaled gains. Seize control of your bodybuilding journey today with CORE CHAMPS LIVER SUPPORT!\nSUGGESTED USE:\nAs a dietary supplement for adults, take 1 capsule 1-3 times daily or as directed by a healthcare practitioner.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, egg, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nTHIS PRODUCT IS ONLY INTENDED FOR HEALTHY ADULTS, 18 YEARS OF AGE OR OLDER. Do not use if you are pregnant, nursing, taking any prescribed medicine or supplements, or if you have a medical condition. Before taking this product, consult a licensed, qualified, health care professional, especially if you are taking any other dietary supplement, prescription drug, or over-the-counter medication; or if, you suspect you have or have been treated for, diagnosed with, or have a family history of, any medical condition. Do not replace a balanced diet and healthy lifestyle. Do not exceed the recommended dosage! Store the bottle tightly closed between 5-30ºC(41-86ºF). Keep away from direct heat, moisture, and sunlight. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/liver-support-core-champs-liver-support-60-veg-capsules-ead75ee3.png",
+          "alt": "LIVER SUPPORT",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "/media/imported/liver-support-core-champs-liver-support-60-veg-capsules-1-2cc517b6.png",
+          "alt": "LIVER SUPPORT",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47907043803410",
+          "title": "Default Title",
+          "sku": "MR-53515323",
+          "option1": "Default Title",
+          "price": 20.89,
+          "compareAtPrice": 20.89,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2024-01-25T10:23:25-05:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8852698136850",
+      "slug": "mass-gainer-6-lbs",
+      "title": "MASS GAINER 6 LBS",
+      "vendor": "CORE CHAMPS",
+      "type": "MASS GAINER",
+      "tags": [
+        "Build Muscle",
+        "Mass Gainer",
+        "Weight Management"
+      ],
+      "price": 47.49,
+      "compareAtPrice": 47.49,
+      "available": false,
+      "summary": "CORE CHAMPS MASS GAINER CORE CHAMPS MASS Gainer is made with 100% whey protein that delivers a massive 1250 calories when mixed with 18-20 oz. of...",
+      "description": "CORE CHAMPS MASS GAINER\nCORE CHAMPS MASS Gainer is made with 100% whey protein that delivers a massive 1250 calories when mixed with 18-20 oz. of water. CORE CHAMPS MASS Gainer contains 50-gram high-quality protein, quickly digested carbohydrates, and other minerals. This advanced mass gainer has been designed for any individual who has a tough time adding size, is in their bulking phase, or wants to break through their strength plateaus.\nCORE CHAMPS MASS Gainer is loaded with huge amounts of Branched Chain Amino Acids (leucine, isoleucine, and valine) in every serving – all of which are critical for muscle building, strength, and recovery from workouts.\nSUGGESTED USE:\nAs a mass gainer, mix 4 scoops (334g) of CORE CHAMPS MASS with 24-32 oz. of water or milk and mix thoroughly in a shaker or blender. For the best results, mix with milk and use a blender. Product sold by weight, not volume. The product does not completely fill the container. Settling occurs during shipping.\nALLERGEN INFORMATION:\nContain Milk and Soy. Made in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant or nursing or if you are taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use it if the outer seal is broken. Store in a cool dry place. Always consult a healthcare professional before starting any diet or exercise program.",
+      "images": [
+        {
+          "src": "/media/imported/mass-gainer-6-lbs-mass-6lbs-chocolate-1-3549667f.png",
+          "alt": "MASS GAINER 6 LBS",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/mass-gainer-6-lbs-mass-6lbs-choco-peanut-butter-63091fed.png",
+          "alt": "MASS GAINER 6 LBS",
+          "width": 1200,
+          "height": 1500
+        }
+      ],
+      "variants": [
+        {
+          "id": "47306428875026",
+          "title": "CHOCOLATE",
+          "sku": "MR-33068290",
+          "option1": "CHOCOLATE",
+          "price": 47.49,
+          "compareAtPrice": 47.49,
+          "available": false
+        },
+        {
+          "id": "47306428907794",
+          "title": "CHOCOLATE PEANUT BUTTER",
+          "sku": "MR-33068306",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 47.49,
+          "compareAtPrice": 47.49,
+          "available": false
+        },
+        {
+          "id": "49954225717522",
+          "title": "COOKIES & CREAM",
+          "sku": "MR-53515996",
+          "option1": "COOKIES & CREAM",
+          "price": 47.49,
+          "compareAtPrice": 47.49,
+          "available": false
+        },
+        {
+          "id": "49954225750290",
+          "title": "BANANA",
+          "sku": "MR-60633157",
+          "option1": "BANANA",
+          "price": 47.49,
+          "compareAtPrice": 47.49,
+          "available": false
+        },
+        {
+          "id": "49954225783058",
+          "title": "VANILLA",
+          "sku": "MR-53515972",
+          "option1": "VANILLA",
+          "price": 47.49,
+          "compareAtPrice": 47.49,
+          "available": false
+        },
+        {
+          "id": "49954225815826",
+          "title": "STRAWBERRY",
+          "sku": "MR-53515989",
+          "option1": "STRAWBERRY",
+          "price": 47.49,
+          "compareAtPrice": 47.49,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2023-10-30T05:48:55-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8852570865938",
+      "slug": "mass-gainer-15-lbs",
+      "title": "MASS GAINER 15 LBS",
+      "vendor": "CORE CHAMPS",
+      "type": "MASS GAINER",
+      "tags": [
+        "Build Muscle",
+        "Mass Gainer",
+        "Weight Management"
+      ],
+      "price": 94.04,
+      "compareAtPrice": 94.04,
+      "available": true,
+      "summary": "CORE CHAMPS MASS GAINER CORE CHAMPS MASS Gainer is made with 100% whey protein that delivers a massive 1250 calories when mixed with 18-20 oz. of...",
+      "description": "CORE CHAMPS MASS GAINER\nCORE CHAMPS MASS Gainer is made with 100% whey protein that delivers a massive 1250 calories when mixed with 18-20 oz. of water. CORE CHAMPS MASS Gainer contains 50-gram high-quality protein, quickly digested carbohydrates, and other minerals. This advanced mass gainer has been designed for any individual who has a tough time adding size, is in their bulking phase, or wants to break through their strength plateaus.\nCORE CHAMPS MASS Gainer is loaded with huge amounts of Branched Chain Amino Acids (leucine, isoleucine, and valine) in every serving – all of which are critical for muscle building, strength, and recovery from workouts.\nSUGGESTED USE:\nAs a mass gainer, mix 4 scoops (334g) of CORE CHAMPS MASS with 24-32 oz. of water or milk and mix thoroughly in a shaker or blender. For the best results, mix with milk and use a blender. Product sold by weight, not volume. The product does not completely fill the container. Settling occurs during shipping.\nALLERGEN INFORMATION:\nContain Milk and Soy. Made in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant or nursing or if you are taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use if the outer seal is broken. Store in a cool dry place. Always consult a healthcare professional before starting any diet or exercise program.",
+      "images": [
+        {
+          "src": "/media/imported/mass-gainer-15-lbs-core-champs-mass-gainer-15lbs-chocolate-d2653c00.png",
+          "alt": "MASS GAINER 15 LBS",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "/media/imported/mass-gainer-15-lbs-core-champs-mass-gainer-15lbs-chocolate-peanut-butter-d424a2d3.png",
+          "alt": "MASS GAINER 15 LBS",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47306286563602",
+          "title": "CHOCOLATE",
+          "sku": "MR-33068122",
+          "option1": "CHOCOLATE",
+          "price": 94.04,
+          "compareAtPrice": 94.04,
+          "available": true
+        },
+        {
+          "id": "47306286694674",
+          "title": "CHOCOLATE PEANUT BUTTER",
+          "sku": "MR-53515330",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 94.04,
+          "compareAtPrice": 94.04,
+          "available": true
+        },
+        {
+          "id": "47306286727442",
+          "title": "COOKIES & CREAM",
+          "sku": "MR-33068450",
+          "option1": "COOKIES & CREAM",
+          "price": 94.04,
+          "compareAtPrice": 94.04,
+          "available": true
+        },
+        {
+          "id": "47306286760210",
+          "title": "VANILLA",
+          "sku": "MR-33068443",
+          "option1": "VANILLA",
+          "price": 94.04,
+          "compareAtPrice": 94.04,
+          "available": false
+        },
+        {
+          "id": "47306286792978",
+          "title": "STRAWBERRY",
+          "sku": "MR-33068436",
+          "option1": "STRAWBERRY",
+          "price": 94.04,
+          "compareAtPrice": 94.04,
+          "available": false
+        },
+        {
+          "id": "49954184790290",
+          "title": "BANANA",
+          "sku": "MR-53515347",
+          "option1": "BANANA",
+          "price": 94.04,
+          "compareAtPrice": 94.04,
+          "available": false
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2023-10-30T05:30:34-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "9042797199634",
+      "slug": "multivitamin-90-tablets-usa-version",
+      "title": "MULTIVITAMIN 90 TABLETS",
+      "vendor": "CORE CHAMPS",
+      "type": "MULTIVITAMIN",
+      "tags": [
+        "Healthy Lifestyle",
+        "Multivitamin",
+        "Recovery",
+        "Vitamins"
+      ],
+      "price": 18.99,
+      "compareAtPrice": 18.99,
+      "available": true,
+      "summary": "CORE CHAMPS MULTIVITAMIN CORE CHAMPS Multivitamin: Boost your vitality and support your overall health with CORE CHAMPS Multivitamin. This expertly formulated supplement is designed to provide...",
+      "description": "CORE CHAMPS MULTIVITAMIN\nCORE CHAMPS Multivitamin:   Boost your vitality and support your overall health with CORE CHAMPS Multivitamin. This expertly formulated supplement is designed to provide an additional source of essential nutrients, ensuring you have all the vitamins you need for optimal well-being. Packed with a variety of vitamins, including A, C, D, E, and B12, this multivitamin is your ticket to feeling your best every day. Not only does CORE CHAMPS Multivitamin contain a comprehensive range of vitamins, but it also includes key minerals like zinc and magnesium to further enhance your health benefits. Whether you lead an active lifestyle or simply want to ensure you're getting all the essential nutrients, this multivitamin is a must-have addition to your daily routine.\nSUGGESTED USE:\nTake three (3) tablets of CORE CHAMPS Multivitamin with your meals or use as directed by a physician or licensed nutritionist.\nALLERGEN INFORMATION:\nContains milk and soy. Made in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nTHIS PRODUCT IS ONLY INTENDED FOR HEALTHY ADULTS, 18 YEARS OF AGE OR OLDER. Do not use if you are pregnant, nursing, taking any prescribed medicine or supplements, or if you have a medical condition. Before taking this product, consult a licensed, qualified, health care professional, especially if you are\ntaking any other dietary supplement, prescription drug or over-the-counter medication; or if, you suspect you have or have been treated for, diagnosed with, or\nhave a family history of, any medical condition. Do not take while fasting. Do not replace a balanced diet and healthy lifestyle. Do not exceed the recommended\ndosage! Store the bottle tightly closed between 5-30°C (41-86°F). Keep away from direct heat, moisture, and sunlight. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/multivitamin-90-tablets-usa-version-multi-vitamin-transparent-b9d1261b.png",
+          "alt": "MULTIVITAMIN 90 TABLETS",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/multivitamin-90-tablets-usa-version-core-champs-multivitamin-90-tablets-1-cb6b4626.png",
+          "alt": "MULTIVITAMIN 90 TABLETS",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47904505168146",
+          "title": "Default Title",
+          "sku": "MR-53515224",
+          "option1": "Default Title",
+          "price": 18.99,
+          "compareAtPrice": 18.99,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2024-01-25T05:58:15-05:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8886866936082",
+      "slug": "nitric-oxide",
+      "title": "NITRIC OXIDE",
+      "vendor": "CORE CHAMPS",
+      "type": "NITRIC OXIDE",
+      "tags": [
+        "Energy Booster",
+        "Enhance Performance",
+        "Increase Performance",
+        "Muscle Pump",
+        "Nitric Oxide"
+      ],
+      "price": 18.99,
+      "compareAtPrice": 18.99,
+      "available": true,
+      "summary": "CORE CHAMPS NITRIC OXIDE EXTREME PUMP CORE CHAMPS Nitric Oxide is crafted to help fuel your body to perform at ultra peak performance powered with superior...",
+      "description": "CORE CHAMPS NITRIC OXIDE EXTREME PUMP\nCORE CHAMPS Nitric Oxide   is crafted to help fuel your body to perform at ultra peak performance powered with superior ingredients, which is ideal for weightlifting, athletics, and bodybuilder of all types.\nNitric Oxide is a compound produced naturally by your body that promotes muscle pumps, energy, and performance, prior to a workout. Strong Nutrition and exercise can support Nitric Oxide Production but sometimes you need an extra boost. Core Champs Nitric Oxide gives you that extra boost you needed to achieve your desired goal.\nSUGGESTED USE:\nTake Four (4) tablets of CORE CHAMPS Nitric Oxide with your meals or use as directed by a physician or licensed nutritionist.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, egg, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nFor adults only. Consult with your physician prior to use if you are pregnant or nursing or if you are taking medication (especially antihypertensives, anticoagulants, and antidiabetic drugs), have a medical condition (especially asthma or renal disease), or are planning to have surgery. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do Not exceed the recommended dosages. Do not use if the outer seal is broken. Store at ambient temperature, away from direct sunlight. Always consult a healthcare professional before starting any diet or exercise program. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/nitric-oxide-nitric-oxide-transparent-82279edf.png",
+          "alt": "NITRIC OXIDE",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/nitric-oxide-core-champs-nitrix-oxide-120-tablets-1-356ff1d7.png",
+          "alt": "NITRIC OXIDE",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47431486308626",
+          "title": "Default Title",
+          "sku": "MR-53515064",
+          "option1": "Default Title",
+          "price": 18.99,
+          "compareAtPrice": 18.99,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2023-11-08T09:12:44-05:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "9042999148818",
+      "slug": "omega-3-usa-version",
+      "title": "OMEGA-3",
+      "vendor": "CORE CHAMPS",
+      "type": "FISH OIL",
+      "tags": [
+        "Fish Oil",
+        "Healthy Lifestyle",
+        "OMEGA-3"
+      ],
+      "price": 15.19,
+      "compareAtPrice": 15.19,
+      "available": false,
+      "summary": "CORE CHAMPS OMEGA-3 FISH OIL CORE CHAMPS Omega-3 fish oil is a highly beneficial dietary supplement extracted from the tissues of oily fish. Abundant in omega-3...",
+      "description": "CORE CHAMPS OMEGA-3 FISH OIL\nCORE CHAMPS Omega-3 fish oil is a highly beneficial dietary supplement extracted from the tissues of oily fish. Abundant in omega-3 fatty acids, crucial for optimal health, this supplement offers a wide range of advantages and applications. Notably, it exhibits anti-inflammatory properties and contributes to the well-being of the brain heart, and skin health. Incorporating omega-3 fish oil into one's diet can be immensely advantageous for overall health and vitality.\nSUGGESTED USE:\nTake 1 (one) softgel of CORE CHAMPS OMEGA-3 with your meals or use as directed by a physician or licensed nutritionist.\nALLERGEN INFORMATION:\nMade in a facility that also processes milk, soy, fish, egg and peanut.\nWARNING:\nTHIS PRODUCT IS ONLY INTENDED FOR HEALTHY ADULTS, 18 YEARS OF AGE OR OLDER . Do not use if you are pregnant, nursing, taking any prescribed medicine or supplements, or if you have a medical condition. Before taking this product, consult a licensed, qualified, health care professional, especially if you are taking any other dietary\nsupplement, prescription drug or over-the-counter medication; or if, you suspect you have or have been treated for, diagnosed with, or have a family history of, any medical condition. Do not replace a balanced diet and healthy lifestyle. Do not exceed the recommended dosage! KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/omega-3-usa-version-omega-3-transparent-e4d0cc3c-ba20-4b94-8040-da8b21c635-c1be8571.png",
+          "alt": "OMEGA-3",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/omega-3-usa-version-core-champs-omega-1000mg-100-softgels-1-33b1d272.png",
+          "alt": "OMEGA-3",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47905678655762",
+          "title": "Default Title",
+          "sku": "MR-53515057",
+          "option1": "Default Title",
+          "price": 15.19,
+          "compareAtPrice": 15.19,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2024-01-25T08:07:28-05:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8885919351058",
+      "slug": "testro-gen",
+      "title": "TESTRO GEN",
+      "vendor": "CORE CHAMPS",
+      "type": "TESTOSTERONE",
+      "tags": [
+        "Boost Energy",
+        "Healthy Lifestyle",
+        "Libido Support",
+        "Muscle Building",
+        "Test Support",
+        "Testosterone"
+      ],
+      "price": 47.49,
+      "compareAtPrice": 47.49,
+      "available": true,
+      "summary": "CORE CHAMPS TESTRO GEN Unlock your true potential with CORE CHAMPS TESTRO GEN —the secret to achieving peak performance, increased vitality, and enhanced confidence. Designed to...",
+      "description": "CORE CHAMPS TESTRO GEN\nUnlock your true potential with CORE CHAMPS TESTRO GEN —the secret to achieving peak performance, increased vitality, and enhanced confidence. Designed to support and optimize your body's natural testosterone production, our carefully crafted formula contains a blend of scientifically backed ingredients that work harmoniously to boost energy, strength, and endurance. Whether you're striving for superior gains in the gym or to regain that youthful vigor, our Testosterone Booster is your ultimate ally on the path to a more robust, confident, and empowered you.\nSUGGESTED USE:\nAs a dietary supplement, take two (2) tablets of CORE CHAMPS TESTRO GEN on\na light to an empty stomach or as directed by a physician or licensed nutritionist.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, egg, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nFor adults only. Consult with your physician prior to use if you are pregnant or nursing if you are taking medication (especially antihypertensives, anticoagulants, and antidiabetic drugs), have a medical condition (especially asthma or renal disease), or are planning to have surgery. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do Not exceed the recommended dosages. Do not use it if the outer seal is broken. Store at ambient temperature, away from direct sunlight. Always consult a healthcare professional before starting any diet or exercise program.   KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/testro-gen-testro-gen-transparent-756a6a90.png",
+          "alt": "TESTRO GEN",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/testro-gen-core-champs-testro-gen-60-tablets-1-792f68f9.png",
+          "alt": "TESTRO GEN",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47428450418962",
+          "title": "Default Title",
+          "sku": "MR-33068177",
+          "option1": "Default Title",
+          "price": 47.49,
+          "compareAtPrice": 47.49,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2023-11-08T04:12:07-05:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8852951204114",
+      "slug": "rdx-pre-workout",
+      "title": "RDX (PRE-WORKOUT)",
+      "vendor": "CORE CHAMPS",
+      "type": "PRE-WORKOUT",
+      "tags": [
+        "Boost Energy",
+        "Energy Booster",
+        "Enhance Performance",
+        "Increase Performance",
+        "Pre-workout"
+      ],
+      "price": 37.99,
+      "compareAtPrice": 37.99,
+      "available": true,
+      "summary": "CORE CHAMPS RDX CORE CHAMPS RDX pre-workout supplement is specially formulated to provide a powerful surge of energy and focus, allowing you to push through your...",
+      "description": "CORE CHAMPS RDX\nCORE CHAMPS RDX pre-workout supplement is specially formulated to provide a powerful surge of energy and focus, allowing you to push through your workouts with increased intensity. Experience unparalleled muscle pumps with our cutting-edge pre-workout blend. Designed to increase blood flow to the muscles, it delivers a rush of nutrients and oxygen, promoting faster muscle growth and recovery. Feel the pump like never before and take your workouts to new heights. Featuring cognitive enhancers, this formula heightens your concentration and enhances mind-muscle connection, maximizing your performance and results.\nSUGGESTED USE:\nDue to extreme potency, beginners take 1/2 (half) scoop 30 minutes before workout\nin 8-10 oz of cold water. For advanced users, take 1 (one) scoop. Do not exceed more than one (1) serving in a day\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nTHIS PRODUCT IS ONLY INTENDED FOR HEALTHY ADULTS, 18 YEARS OF AGE OR OLDER. Do not use if you are pregnant, nursing, taking any prescribed medicine or supplements, or if you have a medical condition. Before taking this product, consult a licensed, qualified, health care professional, especially if you are taking any other dietary supplement, prescription drug or over-the-counter medication; or if, you suspect you have or have been treated for, diagnosed with or have a family history of, any medical condition. This product contains caffeine and should not be used in combination with caffeine or stimulants from any sources. Discontinue use 2 weeks prior to surgery. Immediately discontinue use and contact a medical doctor if you experience any adverse reaction to this product. Do not use this product continuously for more than 8 weeks. Do not use if safety seal is broken or missing. Store at ambient temperature. KEEP OUT OF REACH OF CHILDREN. This product is sold by weight, not volume. Some settling of powder occurs during shipping and handling, which may affect density of powder.",
+      "images": [
+        {
+          "src": "/media/imported/rdx-pre-workout-rdx-blue-raspberry-ed8c786b.png",
+          "alt": "RDX (PRE-WORKOUT)",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/rdx-pre-workout-rdx-watermelon-334c4e25.png",
+          "alt": "RDX (PRE-WORKOUT)",
+          "width": 1200,
+          "height": 1500
+        }
+      ],
+      "variants": [
+        {
+          "id": "47306757931282",
+          "title": "FRUIT PUNCH",
+          "sku": "MR-53515422",
+          "option1": "FRUIT PUNCH",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "47306757964050",
+          "title": "GREEN APPLE",
+          "sku": "MR-53515439",
+          "option1": "GREEN APPLE",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "47306757996818",
+          "title": "KIWI LEMON",
+          "sku": "MR-53515460",
+          "option1": "KIWI LEMON",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "47306758029586",
+          "title": "LEMON LIME",
+          "sku": "MR-53515446",
+          "option1": "LEMON LIME",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "47306758062354",
+          "title": "MANGO",
+          "sku": "MR-53515453",
+          "option1": "MANGO",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "47306758095122",
+          "title": "ORANGE",
+          "sku": "MR-53515477",
+          "option1": "ORANGE",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49954292793618",
+          "title": "BLUE RASPBERRY",
+          "sku": "MR-53515682",
+          "option1": "BLUE RASPBERRY",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": false
+        },
+        {
+          "id": "49954292859154",
+          "title": "WATERMELON",
+          "sku": "MR-53515484",
+          "option1": "WATERMELON",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": false
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2023-10-30T06:20:19-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8885931770130",
+      "slug": "shred-n-burn",
+      "title": "SHRED-N-BURN",
+      "vendor": "CORE CHAMPS",
+      "type": "FAT BURNER",
+      "tags": [
+        "Fat Burner",
+        "Fat Loss",
+        "Weight Loss",
+        "Weight Management"
+      ],
+      "price": 37.99,
+      "compareAtPrice": 37.99,
+      "available": true,
+      "summary": "SHRED-N-BURN FAT BURNER & THERMOGENIC CORE CHAMPS SHRED-N-BURN is all-scientifically researched ingredients blend an appetite suppressant, fat burner, and thermogenic support into one effective product designed...",
+      "description": "SHRED-N-BURN FAT BURNER & THERMOGENIC\nCORE CHAMPS SHRED-N-BURN is all-scientifically researched ingredients blend an appetite suppressant, fat burner, and thermogenic support into one effective product designed to burn fat and promote weight loss for firm, lean muscles and an amazing physique.\nCORE CHAMPS SHRED-N-BURN uses an innovative approach to burn fat, boost metabolism and enhance energy levels with the perfect blend of Caffeine, L-tyrosine, Theobromine, Citrus Aurantium, Gamma Butyrobetaine Hydrochloride, Yohimbine and other weight loss ingredients.\nSUGGESTED USE:\nAs a dietary supplement, take 1 capsule with breakfast or lunch. Do not exceed 1 capsule within any 24-hour period. For maximum results, eat smaller meals. Do not take within 6 hours of sleep.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nTHIS PRODUCT IS ONLY INTENDED FOR HEALTHY ADULTS, 18 YEARS OF AGE OR OLDER. Do not use it if you are pregnant, nursing, taking any prescribed medicine or supplements, or if you have a medical condition. Before taking this product, consult a licensed, qualified, health care professional, especially if you are taking any other dietary supplement, prescription drug, or over-the-counter medication; or if, you suspect you have or have been treated for, diagnosed with or have a family history of, any medical condition. This product contains caffeine and should not be used in combination with caffeine or stimulants from any sources. Do not use if safety seal is broken or missing.\nStore in a cool and dry place. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/shred-n-burn-core-champs-shred-n-burn-60-capsules-991d4dd6.png",
+          "alt": "SHRED-N-BURN",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "/media/imported/shred-n-burn-core-champs-shred-n-burn-60-capsules-1-3e330cf5.png",
+          "alt": "SHRED-N-BURN",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47428646437138",
+          "title": "Default Title",
+          "sku": "MR-33068139",
+          "option1": "Default Title",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2023-11-08T04:24:36-05:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8885865349394",
+      "slug": "tribulus",
+      "title": "TRIBULUS",
+      "vendor": "CORE CHAMPS",
+      "type": "TRIBULUS",
+      "tags": [
+        "Healthy Lifestyle",
+        "Libido Support",
+        "Recovery",
+        "Test Support",
+        "Testosterone",
+        "Tribulus"
+      ],
+      "price": 20.89,
+      "compareAtPrice": 20.89,
+      "available": false,
+      "summary": "CORE CHAMPS TRIBULUS CORE CHAMPS Tribulus is an advanced natural testosterone support that helps regulate hormonal levels and supports male libido. Tribulus is one the most...",
+      "description": "CORE CHAMPS TRIBULUS\nCORE CHAMPS Tribulus is an advanced natural testosterone support that helps regulate hormonal levels and supports male libido. Tribulus is one the most highly researched and studied ingredients, for good reason.\nTribulus Terrestris has been shown to positively affect muscle growth and increase male libido. Natural Testosterone support is the main factor as you get older. Tribulus helps improve natural testosterone at a safe and effective amount. Not only will you start to feel healthier and more aware, but your drive will increase, and your body will return to a sense of normalcy as you continue to use this.\nSUGGESTED USE:\nTake 1 capsule daily between meals or at bedtime with at least 8 oz. of water or juice to facilitate absorption. Use Tribulus for 8–12 weeks before ceasing use for at least 4 weeks.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nFor adults only. Consult with your physician prior to use if you are pregnant or nursing or if you are taking medication (especially antihypertensives, anticoagulants, and antidiabetic drugs), have a medical condition (especially asthma or renal disease), or are planning to have surgery. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not exceed the recommended dosages. Do not use it if the outer seal is broken. Store at ambient temperature, away from direct sunlight. Always consult a healthcare professional before starting any diet or exercise program. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/tribulus-core-champs-tribulus-750mg-61ff42e0.png",
+          "alt": "TRIBULUS",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "/media/imported/tribulus-core-champs-tribulus-750mg-side-2-5953e368.png",
+          "alt": "TRIBULUS",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47427842015506",
+          "title": "Default Title",
+          "sku": "850033068238",
+          "option1": "Default Title",
+          "price": 20.89,
+          "compareAtPrice": 20.89,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2023-11-08T03:40:50-05:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "9701724487954",
+      "slug": "whey-2lbs",
+      "title": "WHEY PROTEIN 2LBS",
+      "vendor": "CORE CHAMPS",
+      "type": "WHEY PROTEIN",
+      "tags": [
+        "Build Muscle",
+        "Muscle Building",
+        "Protein",
+        "Whey",
+        "Whey Protein"
+      ],
+      "price": 37.99,
+      "compareAtPrice": 37.99,
+      "available": true,
+      "summary": "CORE CHAMPS 100% WHEY PROTEIN CORE CHAMPS WHEY offers the perfect mix for superior protein quality with great taste. Protein contributes to the growth and maintenance...",
+      "description": "CORE CHAMPS 100% WHEY PROTEIN\nCORE CHAMPS WHEY offers the perfect mix for superior protein quality with great taste. Protein contributes to the growth and maintenance of muscle mass. Proteins are the source of amino acids in the human body. Some of these amino acids are essential, so we must consume them with our foods. Protein delivered from whey is an excellent source of amino acids (for example, BCAAs). Each scoop provides 25 grams of protein packed with naturally occurring BCAAs and glutamine.\nProtein is a vital dietary supplement for any muscle-building or weight-loss program, providing your muscles with the necessary fuel for lean muscle-building, performance, and recovery.\nSUGGESTED USE:\nAs a protein supplement, mix 1 scoop (34 g) of CORE CHAMPS WHEY with 8–10 oz of cold water and mix thoroughly in a shaker or blender. For the best results, spread protein usage between several smaller meals throughout the day.\nALLERGEN INFORMATION:\nContain Milk and Soy. Made in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant or taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use if the outer seal is broken. Store it in a cool, dry place. Always consult a healthcare professional before starting any diet or exercise program.",
+      "images": [
+        {
+          "src": "/media/imported/whey-2lbs-corechampswhey2lbs-richchocolate-04803b38.png",
+          "alt": "WHEY PROTEIN 2LBS",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "/media/imported/whey-2lbs-corechampswhey2lbs-chocolatepeanutbutter-cd567679.png",
+          "alt": "WHEY PROTEIN 2LBS",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "49946105020690",
+          "title": "RICH CHOCOLATE",
+          "sku": "850060633072",
+          "option1": "RICH CHOCOLATE",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49946105053458",
+          "title": "CHOCOLATE PEANUT BUTTER",
+          "sku": "850060633089",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49946105086226",
+          "title": "VANILLA",
+          "sku": "850060633096",
+          "option1": "VANILLA",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49946105118994",
+          "title": "COOKIES & CREAM",
+          "sku": "850060633102",
+          "option1": "COOKIES & CREAM",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49946105151762",
+          "title": "TOFFEE CARAMEL",
+          "sku": "850060633119",
+          "option1": "TOFFEE CARAMEL",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49946105184530",
+          "title": "CREAMY MANGO",
+          "sku": "850060633126",
+          "option1": "CREAMY MANGO",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49946105217298",
+          "title": "CAFFE MOCHA",
+          "sku": "850060633133",
+          "option1": "CAFFE MOCHA",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        },
+        {
+          "id": "49946105250066",
+          "title": "CARAMEL LATTE",
+          "sku": "850060633140",
+          "option1": "CARAMEL LATTE",
+          "price": 37.99,
+          "compareAtPrice": 37.99,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2024-07-18T12:09:44-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "8853038399762",
+      "slug": "whey",
+      "title": "WHEY PROTEIN 5LBS",
+      "vendor": "CORE CHAMPS",
+      "type": "WHEY PROTEIN",
+      "tags": [
+        "Build Muscle",
+        "Muscle Building",
+        "Protein",
+        "Whey",
+        "Whey Protein"
+      ],
+      "price": 66.49,
+      "compareAtPrice": 66.49,
+      "available": true,
+      "summary": "CORE CHAMPS 100% WHEY PROTEIN CORE CHAMPS WHEY offers perfect mix for superior quality of protein with great taste. Protein contributes to the growth and maintenance...",
+      "description": "CORE CHAMPS 100% WHEY PROTEIN\nCORE CHAMPS WHEY offers perfect mix for superior quality of protein with great taste. Protein contributes to the growth and maintenance of muscle mass. Proteins are the source of amino acids in the human body. Some of these amino acids are essential, so we have to consume them with our foods. Protein delivered from whey is an excellent source of amino acids ( example, BCAAs). Each scoop provides 25 grams of protein packed with naturally occurring BCAAs and glutamine.\nProtein is a vital dietary supplement for any muscle building or weight loss program, providing your muscle with the necessary fuel for lean muscle building, performance, and recovery.\nSUGGESTED USE:\nAs a protein supplement, mix 1 scoop (34 g) of CORE CHAMPS WHEY with 8–10 oz of cold water and mix thoroughly in a shaker or blender. For the best results, spread protein usage between several smaller meals throughout the day.\nALLERGEN INFORMATION:\nContain Milk and Soy. Made in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nDo Not exceed the recommended dosages. Consult with your physician prior to use if you are pregnant or taking medication. Discontinue use 2 weeks prior to surgery or if you experience rapid heartbeat, dizziness, severe headaches, or shortness of breath. Use only as directed. Do not use if the outer seal is broken. Store in a cool dry place. Always consult a healthcare professional before starting any diet or exercise program.",
+      "images": [
+        {
+          "src": "/media/imported/whey-whey-protein-rich-chocolate-f96700d6.png",
+          "alt": "WHEY PROTEIN 5LBS",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/whey-whey-protein-choco-peanut-butter-2f38d074.png",
+          "alt": "WHEY PROTEIN 5LBS",
+          "width": 1200,
+          "height": 1500
+        }
+      ],
+      "variants": [
+        {
+          "id": "47306930290962",
+          "title": "RICH CHOCOLATE",
+          "sku": "850053515538",
+          "option1": "RICH CHOCOLATE",
+          "price": 66.49,
+          "compareAtPrice": 66.49,
+          "available": true
+        },
+        {
+          "id": "49945746669842",
+          "title": "CHOCOLATE PEANUT BUTTER",
+          "sku": "850053515545",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 66.49,
+          "compareAtPrice": 66.49,
+          "available": true
+        },
+        {
+          "id": "47306930389266",
+          "title": "VANILLA",
+          "sku": "850053515552",
+          "option1": "VANILLA",
+          "price": 66.49,
+          "compareAtPrice": 66.49,
+          "available": true
+        },
+        {
+          "id": "47306930487570",
+          "title": "COOKIES & CREAM",
+          "sku": "850053515569",
+          "option1": "COOKIES & CREAM",
+          "price": 66.49,
+          "compareAtPrice": 66.49,
+          "available": true
+        },
+        {
+          "id": "47306930356498",
+          "title": "TOFFEE CARAMEL",
+          "sku": "850053515576",
+          "option1": "TOFFEE CARAMEL",
+          "price": 66.49,
+          "compareAtPrice": 66.49,
+          "available": true
+        },
+        {
+          "id": "47306930422034",
+          "title": "CREAMY MANGO",
+          "sku": "850053515583",
+          "option1": "CREAMY MANGO",
+          "price": 66.49,
+          "compareAtPrice": 66.49,
+          "available": true
+        },
+        {
+          "id": "49945746702610",
+          "title": "CAFFE MOCHA",
+          "sku": "850053515590",
+          "option1": "CAFFE MOCHA",
+          "price": 66.49,
+          "compareAtPrice": 66.49,
+          "available": true
+        },
+        {
+          "id": "49945746735378",
+          "title": "CARAMEL LATTE",
+          "sku": "850053515606",
+          "option1": "CARAMEL LATTE",
+          "price": 66.49,
+          "compareAtPrice": 66.49,
+          "available": true
+        }
+      ],
+      "inventory": 48,
+      "status": "published",
+      "createdAt": "2023-10-30T06:37:19-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "9043063865618",
+      "slug": "zmb6",
+      "title": "ZMB6",
+      "vendor": "CORE CHAMPS",
+      "type": "ZMB6",
+      "tags": [
+        "Healthy Lifestyle",
+        "Libido Support",
+        "Recovery",
+        "Test Support",
+        "Testosterone",
+        "Tribulus",
+        "ZMB6"
+      ],
+      "price": 20.89,
+      "compareAtPrice": 20.89,
+      "available": false,
+      "summary": "CORE CHAMPS ZMB6 ZMB6 is a vital combination of Zinc, Magnesium, and Vitamin B6, supporting protein synthesis, bone health, and cell division. It aids immune system...",
+      "description": "CORE CHAMPS ZMB6\nZMB6  is a vital combination of Zinc, Magnesium, and Vitamin B6, supporting protein synthesis, bone health, and cell division. It aids immune system function, reduces fatigue, supports energy metabolism, and promotes psychological well-being. Zinc plays a role in DNA synthesis, cognitive function, fertility, and the maintenance of various bodily functions, including hair, nails, skin, vision, and testosterone levels, while protecting cells from oxidative stress.\nSUGGESTED USE:\nTake three (3) capsules daily. Take it between meals or at bedtime with at least 8 oz. of water or juice to facilitate absorption.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nTHIS PRODUCT IS ONLY INTENDED FOR HEALTHY ADULTS, 18 YEARS OF AGE OR OLDER. Do not use if you are pregnant, nursing, taking any prescribed medicine or supplements, or if you have a medical condition. before taking this product, consult a licensed, qualified, health care professional, especially if you are taking any other dietary supplement, prescription drug, or over-the-counter medication; or if, you suspect you have or have been treated for, diagnosed with, or have a family history of, any medical condition. Do not replace a balanced diet and healthy lifestyle. Do not exceed the recommended dosage! KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/zmb6-zmb6-transparent-1-bea36527.png",
+          "alt": "ZMB6",
+          "width": 1200,
+          "height": 1500
+        },
+        {
+          "src": "/media/imported/zmb6-core-champs-zmb6-60-capsules-1-5ee9a2d7.png",
+          "alt": "ZMB6",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "47906102149394",
+          "title": "Default Title",
+          "sku": "850033068993",
+          "option1": "Default Title",
+          "price": 20.89,
+          "compareAtPrice": 20.89,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2024-01-25T08:53:58-05:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "10281000894738",
+      "slug": "core-champs-isolate-100-whey-protein-isolate-2lbs-30-servings",
+      "title": "Core Champs Isolate – 100% Whey Protein Isolate | 2lbs | 30 Servings",
+      "vendor": "CORE CHAMPS",
+      "type": "",
+      "tags": [],
+      "price": 0,
+      "compareAtPrice": 0,
+      "available": false,
+      "summary": "Build lean muscle and recover faster with Core Champs Isolate, a premium 100% Whey Protein Isolate designed for athletes and everyday fitness goals. Clean, fast-digesting protein...",
+      "description": "Build lean muscle and recover faster with Core Champs Isolate, a premium 100% Whey Protein Isolate designed for athletes and everyday fitness goals. Clean, fast-digesting protein with smooth taste and instant mixing, available in multiple flavours.\nKey Benefits\n100% Whey Protein Isolate for clean, high-quality protein intake\nSupports lean muscle growth and strength\nHelps with post-workout recovery\nLow fat and low sugar formula\nMixes instantly for a smooth shake\nSuitable for gym, sports, and daily protein needs\nWorks well in water, milk, smoothies, oats, and recipes\nCore Champs Isolate is a high-performance 100% Whey Protein Isolate formulated to support muscle building, strength, and faster recovery. Whether you are training regularly, staying active, or increasing your daily protein intake, Core Champs Isolate provides a clean and reliable protein boost in every scoop.\nChoose from a range of flavours while maintaining the same premium protein quality.\nAvailable Flavours\nBirthday Cake\nCaramel Latte\nChoco Peanut Butter\nCookies & Cream\nDelicious Chocolate\nSmooth Vanilla\nStrawberry Banana\nDirections\nMix 1 scoop (30g) with 200–250 ml water or milk. Take 1 to 2 servings daily, preferably after workout or between meals.\nWho It’s For\nIdeal for:\nGym users and athletes\nMuscle building and lean gains\nDaily protein supplementation\nRecovery support\nBusy lifestyles needing convenient nutrition\nWhat’s Included\n1 x Core Champs Isolate (2lbs / approx. 900g)\nFlavour selected from dropdown menu\nStorage\nStore in a cool, dry place. Keep the lid tightly closed.",
+      "images": [
+        {
+          "src": "/media/imported/core-champs-isolate-100-whey-protein-isolate-2lbs-30-servings-corechampswheyisolate2lbs-birthdaycake-66f21f10.png",
+          "alt": "Core Champs Isolate – 100% Whey Protein Isolate | 2lbs | 30 Servings",
+          "width": 4000,
+          "height": 5000
+        },
+        {
+          "src": "/media/imported/core-champs-isolate-100-whey-protein-isolate-2lbs-30-servings-core-champs-whey-isolate-2-lbs-caramel-latte-2932e693--cf4b5479.png",
+          "alt": "Core Champs Isolate – 100% Whey Protein Isolate | 2lbs | 30 Servings",
+          "width": 4000,
+          "height": 5000
+        }
+      ],
+      "variants": [
+        {
+          "id": "51846480003346",
+          "title": "Birthday Cake",
+          "sku": "",
+          "option1": "Birthday Cake",
+          "price": 0,
+          "compareAtPrice": 0,
+          "available": false
+        },
+        {
+          "id": "51846480036114",
+          "title": "Caramel Latte",
+          "sku": "",
+          "option1": "Caramel Latte",
+          "price": 0,
+          "compareAtPrice": 0,
+          "available": false
+        },
+        {
+          "id": "51846480068882",
+          "title": "Choco Peanut Butter",
+          "sku": "",
+          "option1": "Choco Peanut Butter",
+          "price": 0,
+          "compareAtPrice": 0,
+          "available": false
+        },
+        {
+          "id": "51846480101650",
+          "title": "Cookies & Cream",
+          "sku": "",
+          "option1": "Cookies & Cream",
+          "price": 0,
+          "compareAtPrice": 0,
+          "available": false
+        },
+        {
+          "id": "51846480134418",
+          "title": "Delicious Chocolate",
+          "sku": "",
+          "option1": "Delicious Chocolate",
+          "price": 0,
+          "compareAtPrice": 0,
+          "available": false
+        },
+        {
+          "id": "51846480167186",
+          "title": "Smooth Vanilla",
+          "sku": "",
+          "option1": "Smooth Vanilla",
+          "price": 0,
+          "compareAtPrice": 0,
+          "available": false
+        },
+        {
+          "id": "51846480199954",
+          "title": "Strawberry Banana",
+          "sku": "",
+          "option1": "Strawberry Banana",
+          "price": 0,
+          "compareAtPrice": 0,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2026-01-02T10:04:44-05:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "10149911658770",
+      "slug": "crush-summer-champion-style-bundle-1",
+      "title": "Crush Summer, Champion Style Bundle",
+      "vendor": "CORE CHAMPS",
+      "type": "",
+      "tags": [],
+      "price": 75.13,
+      "compareAtPrice": 107.32,
+      "available": false,
+      "summary": "",
+      "description": "",
+      "images": [
+        {
+          "src": "/media/imported/crush-summer-champion-style-bundle-1-corechamps-summerbundle-1080x1080-1-ab505065.png",
+          "alt": "Crush Summer, Champion Style Bundle",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "src": "/media/imported/crush-summer-champion-style-bundle-1-eaa-watermelon-transparent-50974661.png",
+          "alt": "Crush Summer, Champion Style Bundle",
+          "width": 1200,
+          "height": 1500
+        }
+      ],
+      "variants": [
+        {
+          "id": "51316021264658",
+          "title": "DELICIOUS CHOCOLATE / TROPICAL FRUIT / FRUIT PUNCH",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021297426",
+          "title": "DELICIOUS CHOCOLATE / TROPICAL FRUIT / GREEN APPLE",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021330194",
+          "title": "DELICIOUS CHOCOLATE / TROPICAL FRUIT / LEMON LIME",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021362962",
+          "title": "DELICIOUS CHOCOLATE / TROPICAL FRUIT / MANGO",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021395730",
+          "title": "DELICIOUS CHOCOLATE / BLUE RASPBERRY / FRUIT PUNCH",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021428498",
+          "title": "DELICIOUS CHOCOLATE / BLUE RASPBERRY / GREEN APPLE",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021461266",
+          "title": "DELICIOUS CHOCOLATE / BLUE RASPBERRY / LEMON LIME",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021494034",
+          "title": "DELICIOUS CHOCOLATE / BLUE RASPBERRY / MANGO",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021526802",
+          "title": "DELICIOUS CHOCOLATE / WATERMELON / FRUIT PUNCH",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021559570",
+          "title": "DELICIOUS CHOCOLATE / WATERMELON / GREEN APPLE",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021592338",
+          "title": "DELICIOUS CHOCOLATE / WATERMELON / LEMON LIME",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021625106",
+          "title": "DELICIOUS CHOCOLATE / WATERMELON / MANGO",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021657874",
+          "title": "DELICIOUS CHOCOLATE / GREEN APPLE / FRUIT PUNCH",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021690642",
+          "title": "DELICIOUS CHOCOLATE / GREEN APPLE / GREEN APPLE",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021723410",
+          "title": "DELICIOUS CHOCOLATE / GREEN APPLE / LEMON LIME",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021756178",
+          "title": "DELICIOUS CHOCOLATE / GREEN APPLE / MANGO",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021788946",
+          "title": "DELICIOUS CHOCOLATE / LEMON LIME / FRUIT PUNCH",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021821714",
+          "title": "DELICIOUS CHOCOLATE / LEMON LIME / GREEN APPLE",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021854482",
+          "title": "DELICIOUS CHOCOLATE / LEMON LIME / LEMON LIME",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021887250",
+          "title": "DELICIOUS CHOCOLATE / LEMON LIME / MANGO",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021920018",
+          "title": "DELICIOUS CHOCOLATE / MANGO / FRUIT PUNCH",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021952786",
+          "title": "DELICIOUS CHOCOLATE / MANGO / GREEN APPLE",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316021985554",
+          "title": "DELICIOUS CHOCOLATE / MANGO / LEMON LIME",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022018322",
+          "title": "DELICIOUS CHOCOLATE / MANGO / MANGO",
+          "sku": "",
+          "option1": "DELICIOUS CHOCOLATE",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022051090",
+          "title": "CHOCOLATE PEANUT BUTTER / TROPICAL FRUIT / FRUIT PUNCH",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022083858",
+          "title": "CHOCOLATE PEANUT BUTTER / TROPICAL FRUIT / GREEN APPLE",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022116626",
+          "title": "CHOCOLATE PEANUT BUTTER / TROPICAL FRUIT / LEMON LIME",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022149394",
+          "title": "CHOCOLATE PEANUT BUTTER / TROPICAL FRUIT / MANGO",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022182162",
+          "title": "CHOCOLATE PEANUT BUTTER / BLUE RASPBERRY / FRUIT PUNCH",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022214930",
+          "title": "CHOCOLATE PEANUT BUTTER / BLUE RASPBERRY / GREEN APPLE",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022247698",
+          "title": "CHOCOLATE PEANUT BUTTER / BLUE RASPBERRY / LEMON LIME",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022280466",
+          "title": "CHOCOLATE PEANUT BUTTER / BLUE RASPBERRY / MANGO",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022313234",
+          "title": "CHOCOLATE PEANUT BUTTER / WATERMELON / FRUIT PUNCH",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022346002",
+          "title": "CHOCOLATE PEANUT BUTTER / WATERMELON / GREEN APPLE",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022378770",
+          "title": "CHOCOLATE PEANUT BUTTER / WATERMELON / LEMON LIME",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022411538",
+          "title": "CHOCOLATE PEANUT BUTTER / WATERMELON / MANGO",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022444306",
+          "title": "CHOCOLATE PEANUT BUTTER / GREEN APPLE / FRUIT PUNCH",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022477074",
+          "title": "CHOCOLATE PEANUT BUTTER / GREEN APPLE / GREEN APPLE",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022509842",
+          "title": "CHOCOLATE PEANUT BUTTER / GREEN APPLE / LEMON LIME",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022542610",
+          "title": "CHOCOLATE PEANUT BUTTER / GREEN APPLE / MANGO",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022575378",
+          "title": "CHOCOLATE PEANUT BUTTER / LEMON LIME / FRUIT PUNCH",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022608146",
+          "title": "CHOCOLATE PEANUT BUTTER / LEMON LIME / GREEN APPLE",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022640914",
+          "title": "CHOCOLATE PEANUT BUTTER / LEMON LIME / LEMON LIME",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022673682",
+          "title": "CHOCOLATE PEANUT BUTTER / LEMON LIME / MANGO",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022706450",
+          "title": "CHOCOLATE PEANUT BUTTER / MANGO / FRUIT PUNCH",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022739218",
+          "title": "CHOCOLATE PEANUT BUTTER / MANGO / GREEN APPLE",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022771986",
+          "title": "CHOCOLATE PEANUT BUTTER / MANGO / LEMON LIME",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022804754",
+          "title": "CHOCOLATE PEANUT BUTTER / MANGO / MANGO",
+          "sku": "",
+          "option1": "CHOCOLATE PEANUT BUTTER",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022837522",
+          "title": "SMOOTH VANILLA / TROPICAL FRUIT / FRUIT PUNCH",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022870290",
+          "title": "SMOOTH VANILLA / TROPICAL FRUIT / GREEN APPLE",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022903058",
+          "title": "SMOOTH VANILLA / TROPICAL FRUIT / LEMON LIME",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022935826",
+          "title": "SMOOTH VANILLA / TROPICAL FRUIT / MANGO",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316022968594",
+          "title": "SMOOTH VANILLA / BLUE RASPBERRY / FRUIT PUNCH",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023001362",
+          "title": "SMOOTH VANILLA / BLUE RASPBERRY / GREEN APPLE",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023034130",
+          "title": "SMOOTH VANILLA / BLUE RASPBERRY / LEMON LIME",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023066898",
+          "title": "SMOOTH VANILLA / BLUE RASPBERRY / MANGO",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023099666",
+          "title": "SMOOTH VANILLA / WATERMELON / FRUIT PUNCH",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023132434",
+          "title": "SMOOTH VANILLA / WATERMELON / GREEN APPLE",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023165202",
+          "title": "SMOOTH VANILLA / WATERMELON / LEMON LIME",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023197970",
+          "title": "SMOOTH VANILLA / WATERMELON / MANGO",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023230738",
+          "title": "SMOOTH VANILLA / GREEN APPLE / FRUIT PUNCH",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023263506",
+          "title": "SMOOTH VANILLA / GREEN APPLE / GREEN APPLE",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023296274",
+          "title": "SMOOTH VANILLA / GREEN APPLE / LEMON LIME",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023329042",
+          "title": "SMOOTH VANILLA / GREEN APPLE / MANGO",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023361810",
+          "title": "SMOOTH VANILLA / LEMON LIME / FRUIT PUNCH",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023394578",
+          "title": "SMOOTH VANILLA / LEMON LIME / GREEN APPLE",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023427346",
+          "title": "SMOOTH VANILLA / LEMON LIME / LEMON LIME",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023460114",
+          "title": "SMOOTH VANILLA / LEMON LIME / MANGO",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023492882",
+          "title": "SMOOTH VANILLA / MANGO / FRUIT PUNCH",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023525650",
+          "title": "SMOOTH VANILLA / MANGO / GREEN APPLE",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023558418",
+          "title": "SMOOTH VANILLA / MANGO / LEMON LIME",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023591186",
+          "title": "SMOOTH VANILLA / MANGO / MANGO",
+          "sku": "",
+          "option1": "SMOOTH VANILLA",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023623954",
+          "title": "COOKIES & CREAM / TROPICAL FRUIT / FRUIT PUNCH",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023656722",
+          "title": "COOKIES & CREAM / TROPICAL FRUIT / GREEN APPLE",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023689490",
+          "title": "COOKIES & CREAM / TROPICAL FRUIT / LEMON LIME",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023722258",
+          "title": "COOKIES & CREAM / TROPICAL FRUIT / MANGO",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023755026",
+          "title": "COOKIES & CREAM / BLUE RASPBERRY / FRUIT PUNCH",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023787794",
+          "title": "COOKIES & CREAM / BLUE RASPBERRY / GREEN APPLE",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023820562",
+          "title": "COOKIES & CREAM / BLUE RASPBERRY / LEMON LIME",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023853330",
+          "title": "COOKIES & CREAM / BLUE RASPBERRY / MANGO",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023886098",
+          "title": "COOKIES & CREAM / WATERMELON / FRUIT PUNCH",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023918866",
+          "title": "COOKIES & CREAM / WATERMELON / GREEN APPLE",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023951634",
+          "title": "COOKIES & CREAM / WATERMELON / LEMON LIME",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316023984402",
+          "title": "COOKIES & CREAM / WATERMELON / MANGO",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024017170",
+          "title": "COOKIES & CREAM / GREEN APPLE / FRUIT PUNCH",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024049938",
+          "title": "COOKIES & CREAM / GREEN APPLE / GREEN APPLE",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024082706",
+          "title": "COOKIES & CREAM / GREEN APPLE / LEMON LIME",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024115474",
+          "title": "COOKIES & CREAM / GREEN APPLE / MANGO",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024148242",
+          "title": "COOKIES & CREAM / LEMON LIME / FRUIT PUNCH",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024181010",
+          "title": "COOKIES & CREAM / LEMON LIME / GREEN APPLE",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024213778",
+          "title": "COOKIES & CREAM / LEMON LIME / LEMON LIME",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024246546",
+          "title": "COOKIES & CREAM / LEMON LIME / MANGO",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024279314",
+          "title": "COOKIES & CREAM / MANGO / FRUIT PUNCH",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024312082",
+          "title": "COOKIES & CREAM / MANGO / GREEN APPLE",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024344850",
+          "title": "COOKIES & CREAM / MANGO / LEMON LIME",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        },
+        {
+          "id": "51316024377618",
+          "title": "COOKIES & CREAM / MANGO / MANGO",
+          "sku": "",
+          "option1": "COOKIES & CREAM",
+          "price": 75.13,
+          "compareAtPrice": 107.32,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2025-05-28T09:44:29-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "10120378319122",
+      "slug": "beef-aminos",
+      "title": "Beef Aminos",
+      "vendor": "CORE CHAMPS",
+      "type": "AMINO ACID",
+      "tags": [
+        "Amino Acids"
+      ],
+      "price": 37.05,
+      "compareAtPrice": 42.75,
+      "available": false,
+      "summary": "300 Tablets | Dietary Supplement Power Up Your Performance with Ultra-Concentrated Beef Aminos! Core Champs Beef Aminos delivers a potent dose of high-quality amino acids derived...",
+      "description": "300 Tablets | Dietary Supplement\nPower Up Your Performance with Ultra-Concentrated Beef Aminos!\nCore Champs Beef Aminos delivers a potent dose of high-quality amino acids derived from premium beef protein. Designed for athletes and bodybuilders, this formula supports muscle recovery, strength building, and lean muscle growth.\nKey Features:\n3G Protein per Serving\n100% Ultra-Concentrated Amino Acid Formula\nHelps boost muscle recovery\nAids in building strength\nSupports lean muscle growth\nWhether you're cutting, bulking, or just maintaining, Core Champs Beef Aminos are your go-to supplement to ensure your body has the essential amino acids needed for recovery and growth.",
+      "images": [
+        {
+          "src": "/media/imported/beef-aminos-corechampsbeefaminos-d3d78a97.png",
+          "alt": "Beef Aminos",
+          "width": 4000,
+          "height": 5000
+        },
+        {
+          "src": "/media/imported/beef-aminos-corechampsbeefaminos-02-29930018.png",
+          "alt": "Beef Aminos",
+          "width": 4000,
+          "height": 5000
+        }
+      ],
+      "variants": [
+        {
+          "id": "51211440554258",
+          "title": "Default Title",
+          "sku": "",
+          "option1": "Default Title",
+          "price": 37.05,
+          "compareAtPrice": 42.75,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2025-04-22T05:38:30-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    },
+    {
+      "id": "9401617252626",
+      "slug": "beta-alanine",
+      "title": "BETA-ALANINE",
+      "vendor": "CORE CHAMPS",
+      "type": "BETA-ALANINE",
+      "tags": [
+        "Beta-Alanine",
+        "Build Muscle",
+        "Recovery"
+      ],
+      "price": 37.05,
+      "compareAtPrice": 37.05,
+      "available": false,
+      "summary": "BETA-ALANINE 2000MG Core Champs Beta-Alanine enhances blood flow and efficiently delivers nutrients to the muscles. It may cause a tingling sensation on the skin. It is...",
+      "description": "BETA-ALANINE 2000MG\nCore Champs Beta-Alanine enhances blood flow and efficiently delivers nutrients to the muscles. It may cause a tingling sensation on the skin. It is a typical and expected side effect.\nIt promotes fatty acid mobilization and is a known supplement amongst fitness enthusiasts, trainers, athletes, bodybuilders, etc. because of its proven benefits. It can help you knock out more reps!\nSUGGESTED USE:\nAs a dietary supplement, consume one (1) serving (2g) with 6–10 oz of cold water or your preferred drink prior to exercise. Mix with a spoon to dissolve. Consume one (1) serving between meals on non-training days.\nALLERGEN INFORMATION:\nMade in a facility that also processes sesame, eggs, peanuts, tree nuts, fish/crustaceans/shellfish oils, and wheat products.\nWARNING:\nTHIS PRODUCT IS ONLY INTENDED FOR HEALTHY ADULTS, 18 YEARS OF AGE OR OLDER. Do not use if you are pregnant, nursing, taking any prescribed medicine or supplements, or if you have a medical condition. Before taking this product, consult a licensed, qualified, health care professional, especially if you are taking any other dietary supplement, prescription drug or over-the-counter medication; or if, you suspect you have or have been treated for, diagnosed with or have a family history of, any medical condition. This product contains caffeine and should not be used in combination with caffeine or stimulants from any sources. Do not use if safety seal is broken or missing.\nStore in a cool, dry place. KEEP OUT OF REACH OF CHILDREN.",
+      "images": [
+        {
+          "src": "/media/imported/beta-alanine-core-champs-beta-alanine-100-servings-c894b7ba.png",
+          "alt": "BETA-ALANINE",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "src": "/media/imported/beta-alanine-core-champs-beta-alanine-100-servings-side-2-11e1aa08.png",
+          "alt": "BETA-ALANINE",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "variants": [
+        {
+          "id": "48965900108050",
+          "title": "Default Title",
+          "sku": "850053515859",
+          "option1": "Default Title",
+          "price": 37.05,
+          "compareAtPrice": 37.05,
+          "available": false
+        }
+      ],
+      "inventory": 0,
+      "status": "published",
+      "createdAt": "2024-04-30T03:38:52-04:00",
+      "updatedAt": "2026-04-30T12:22:02-04:00"
+    }
+  ],
+  "media": [
+    {
+      "id": "agmatine-750mg-1",
+      "title": "AGMATINE 750MG image 1",
+      "type": "product",
+      "src": "/media/imported/agmatine-750mg-core-champs-agmatine-750mg-54645643-fe8e-4e83-9e43-aed-b86899b9.png",
+      "filename": "agmatine-750mg-core-champs-agmatine-750mg-54645643-fe8e-4e83-9e43-aed-b86899b9.png",
+      "bytes": 343111
+    },
+    {
+      "id": "agmatine-750mg-2",
+      "title": "AGMATINE 750MG image 2",
+      "type": "product",
+      "src": "/media/imported/agmatine-750mg-core-champs-agmatine-750mg-s2-5614f93b.png",
+      "filename": "agmatine-750mg-core-champs-agmatine-750mg-s2-5614f93b.png",
+      "bytes": 321455
+    },
+    {
+      "id": "bcaa-powder-7000-mg-1",
+      "title": "BCAA POWDER 7000 MG image 1",
+      "type": "product",
+      "src": "/media/imported/bcaa-powder-7000-mg-bcaa-blue-raspberry-ice-236af5b1.png",
+      "filename": "bcaa-powder-7000-mg-bcaa-blue-raspberry-ice-236af5b1.png",
+      "bytes": 875254
+    },
+    {
+      "id": "bcaa-powder-7000-mg-2",
+      "title": "BCAA POWDER 7000 MG image 2",
+      "type": "product",
+      "src": "/media/imported/bcaa-powder-7000-mg-bcaa-fruit-punch-09f8fa80.png",
+      "filename": "bcaa-powder-7000-mg-bcaa-fruit-punch-09f8fa80.png",
+      "bytes": 882576
+    },
+    {
+      "id": "cla-conjugated-linoleic-acid-1",
+      "title": "CLA (Conjugated Linoleic Acid) image 1",
+      "type": "product",
+      "src": "/media/imported/cla-conjugated-linoleic-acid-cla-transparent-7b5ad584.png",
+      "filename": "cla-conjugated-linoleic-acid-cla-transparent-7b5ad584.png",
+      "bytes": 823750
+    },
+    {
+      "id": "cla-conjugated-linoleic-acid-2",
+      "title": "CLA (Conjugated Linoleic Acid) image 2",
+      "type": "product",
+      "src": "/media/imported/cla-conjugated-linoleic-acid-core-champs-cla-1000mg-120-softgels-1-7bc2b643.png",
+      "filename": "cla-conjugated-linoleic-acid-core-champs-cla-1000mg-120-softgels-1-7bc2b643.png",
+      "bytes": 378601
+    },
+    {
+      "id": "creatine-5000mg-1",
+      "title": "CREATINE 5000MG image 1",
+      "type": "product",
+      "src": "/media/imported/creatine-5000mg-creatine-4609cd6c.png",
+      "filename": "creatine-5000mg-creatine-4609cd6c.png",
+      "bytes": 626121
+    },
+    {
+      "id": "creatine-5000mg-2",
+      "title": "CREATINE 5000MG image 2",
+      "type": "product",
+      "src": "/media/imported/creatine-5000mg-core-champs-creatine-5000mg-1-479c3517.png",
+      "filename": "creatine-5000mg-core-champs-creatine-5000mg-1-479c3517.png",
+      "bytes": 432039
+    },
+    {
+      "id": "eaa-essential-amino-acids-1",
+      "title": "EAA (ESSENTIAL AMINO ACIDS) image 1",
+      "type": "product",
+      "src": "/media/imported/eaa-essential-amino-acids-eaa-fruit-punch-transparent-5e647c5e.png",
+      "filename": "eaa-essential-amino-acids-eaa-fruit-punch-transparent-5e647c5e.png",
+      "bytes": 1161057
+    },
+    {
+      "id": "eaa-essential-amino-acids-2",
+      "title": "EAA (ESSENTIAL AMINO ACIDS) image 2",
+      "type": "product",
+      "src": "/media/imported/eaa-essential-amino-acids-core-champs-eaa-tropical-fruit-d6707577.png",
+      "filename": "eaa-essential-amino-acids-core-champs-eaa-tropical-fruit-d6707577.png",
+      "bytes": 532346
+    },
+    {
+      "id": "glutamine-1",
+      "title": "GLUTAMINE image 1",
+      "type": "product",
+      "src": "/media/imported/glutamine-core-champs-glutamine-fcc303a6.png",
+      "filename": "glutamine-core-champs-glutamine-fcc303a6.png",
+      "bytes": 489710
+    },
+    {
+      "id": "glutamine-2",
+      "title": "GLUTAMINE image 2",
+      "type": "product",
+      "src": "/media/imported/glutamine-core-champs-glutamine-side-1-da227e3d.png",
+      "filename": "glutamine-core-champs-glutamine-side-1-da227e3d.png",
+      "bytes": 493006
+    },
+    {
+      "id": "isolate-whey-2lbs-1",
+      "title": "ISOLATE WHEY 2LBS image 1",
+      "type": "product",
+      "src": "/media/imported/isolate-whey-2lbs-core-champs-whey-isolate-2-lbs-delicious-chocolate-bebc25fd.png",
+      "filename": "isolate-whey-2lbs-core-champs-whey-isolate-2-lbs-delicious-chocolate-bebc25fd.png",
+      "bytes": 570550
+    },
+    {
+      "id": "isolate-whey-2lbs-2",
+      "title": "ISOLATE WHEY 2LBS image 2",
+      "type": "product",
+      "src": "/media/imported/isolate-whey-2lbs-core-champs-whey-isolate-2-lbs-chocolate-peanut-butter-3a1350e9.png",
+      "filename": "isolate-whey-2lbs-core-champs-whey-isolate-2-lbs-chocolate-peanut-butter-3a1350e9.png",
+      "bytes": 573264
+    },
+    {
+      "id": "isolate-whey-1",
+      "title": "ISOLATE WHEY 4.41LBS image 1",
+      "type": "product",
+      "src": "/media/imported/isolate-whey-isolate-delicious-chocolate-transparent-462fe6ea.png",
+      "filename": "isolate-whey-isolate-delicious-chocolate-transparent-462fe6ea.png",
+      "bytes": 1128206
+    },
+    {
+      "id": "isolate-whey-2",
+      "title": "ISOLATE WHEY 4.41LBS image 2",
+      "type": "product",
+      "src": "/media/imported/isolate-whey-isolate-choco-peanut-butter-927ae2e0.png",
+      "filename": "isolate-whey-isolate-choco-peanut-butter-927ae2e0.png",
+      "bytes": 1127614
+    },
+    {
+      "id": "joint-support-1",
+      "title": "JOINT SUPPORT image 1",
+      "type": "product",
+      "src": "/media/imported/joint-support-joint-support-transparent-ea6d0a11.png",
+      "filename": "joint-support-joint-support-transparent-ea6d0a11.png",
+      "bytes": 1150702
+    },
+    {
+      "id": "joint-support-2",
+      "title": "JOINT SUPPORT image 2",
+      "type": "product",
+      "src": "/media/imported/joint-support-core-champs-joint-support-60-tablets-1-4de8fba7.png",
+      "filename": "joint-support-core-champs-joint-support-60-tablets-1-4de8fba7.png",
+      "bytes": 398616
+    },
+    {
+      "id": "l-arginine-1000mg-1",
+      "title": "L-ARGININE 1000MG image 1",
+      "type": "product",
+      "src": "/media/imported/l-arginine-1000mg-l-arginine-transparent-7ec7b454.png",
+      "filename": "l-arginine-1000mg-l-arginine-transparent-7ec7b454.png",
+      "bytes": 978141
+    },
+    {
+      "id": "l-arginine-1000mg-2",
+      "title": "L-ARGININE 1000MG image 2",
+      "type": "product",
+      "src": "/media/imported/l-arginine-1000mg-core-champs-l-arginine-120-side-2-c9746fa2.png",
+      "filename": "l-arginine-1000mg-core-champs-l-arginine-120-side-2-c9746fa2.png",
+      "bytes": 358881
+    },
+    {
+      "id": "l-carnitine-3000-new-packing-1",
+      "title": "L-CARNITINE 3000MG image 1",
+      "type": "product",
+      "src": "/media/imported/l-carnitine-3000-new-packing-core-champs-l-carnitine-3000mg-blue-raspberry-usa-2f3db4d2.png",
+      "filename": "l-carnitine-3000-new-packing-core-champs-l-carnitine-3000mg-blue-raspberry-usa-2f3db4d2.png",
+      "bytes": 500731
+    },
+    {
+      "id": "l-carnitine-3000-new-packing-2",
+      "title": "L-CARNITINE 3000MG image 2",
+      "type": "product",
+      "src": "/media/imported/l-carnitine-3000-new-packing-core-champs-l-carnitine-3000mg-mango-usa-0baa3e50.png",
+      "filename": "l-carnitine-3000-new-packing-core-champs-l-carnitine-3000mg-mango-usa-0baa3e50.png",
+      "bytes": 500454
+    },
+    {
+      "id": "l-citrulline-1",
+      "title": "L-CITRULLINE image 1",
+      "type": "product",
+      "src": "/media/imported/l-citrulline-core-champs-l-citrulline-2000mg-b89c6c1a.png",
+      "filename": "l-citrulline-core-champs-l-citrulline-2000mg-b89c6c1a.png",
+      "bytes": 486787
+    },
+    {
+      "id": "l-citrulline-2",
+      "title": "L-CITRULLINE image 2",
+      "type": "product",
+      "src": "/media/imported/l-citrulline-core-champs-l-citrulline-2000mg-1-214304db.png",
+      "filename": "l-citrulline-core-champs-l-citrulline-2000mg-1-214304db.png",
+      "bytes": 428425
+    },
+    {
+      "id": "liver-support-1",
+      "title": "LIVER SUPPORT image 1",
+      "type": "product",
+      "src": "/media/imported/liver-support-core-champs-liver-support-60-veg-capsules-ead75ee3.png",
+      "filename": "liver-support-core-champs-liver-support-60-veg-capsules-ead75ee3.png",
+      "bytes": 398855
+    },
+    {
+      "id": "liver-support-2",
+      "title": "LIVER SUPPORT image 2",
+      "type": "product",
+      "src": "/media/imported/liver-support-core-champs-liver-support-60-veg-capsules-1-2cc517b6.png",
+      "filename": "liver-support-core-champs-liver-support-60-veg-capsules-1-2cc517b6.png",
+      "bytes": 397688
+    },
+    {
+      "id": "mass-gainer-6-lbs-1",
+      "title": "MASS GAINER 6 LBS image 1",
+      "type": "product",
+      "src": "/media/imported/mass-gainer-6-lbs-mass-6lbs-chocolate-1-3549667f.png",
+      "filename": "mass-gainer-6-lbs-mass-6lbs-chocolate-1-3549667f.png",
+      "bytes": 1107895
+    },
+    {
+      "id": "mass-gainer-6-lbs-2",
+      "title": "MASS GAINER 6 LBS image 2",
+      "type": "product",
+      "src": "/media/imported/mass-gainer-6-lbs-mass-6lbs-choco-peanut-butter-63091fed.png",
+      "filename": "mass-gainer-6-lbs-mass-6lbs-choco-peanut-butter-63091fed.png",
+      "bytes": 1115519
+    },
+    {
+      "id": "mass-gainer-15-lbs-1",
+      "title": "MASS GAINER 15 LBS image 1",
+      "type": "product",
+      "src": "/media/imported/mass-gainer-15-lbs-core-champs-mass-gainer-15lbs-chocolate-d2653c00.png",
+      "filename": "mass-gainer-15-lbs-core-champs-mass-gainer-15lbs-chocolate-d2653c00.png",
+      "bytes": 628241
+    },
+    {
+      "id": "mass-gainer-15-lbs-2",
+      "title": "MASS GAINER 15 LBS image 2",
+      "type": "product",
+      "src": "/media/imported/mass-gainer-15-lbs-core-champs-mass-gainer-15lbs-chocolate-peanut-butter-d424a2d3.png",
+      "filename": "mass-gainer-15-lbs-core-champs-mass-gainer-15lbs-chocolate-peanut-butter-d424a2d3.png",
+      "bytes": 632079
+    },
+    {
+      "id": "multivitamin-90-tablets-usa-version-1",
+      "title": "MULTIVITAMIN 90 TABLETS image 1",
+      "type": "product",
+      "src": "/media/imported/multivitamin-90-tablets-usa-version-multi-vitamin-transparent-b9d1261b.png",
+      "filename": "multivitamin-90-tablets-usa-version-multi-vitamin-transparent-b9d1261b.png",
+      "bytes": 1207334
+    },
+    {
+      "id": "multivitamin-90-tablets-usa-version-2",
+      "title": "MULTIVITAMIN 90 TABLETS image 2",
+      "type": "product",
+      "src": "/media/imported/multivitamin-90-tablets-usa-version-core-champs-multivitamin-90-tablets-1-cb6b4626.png",
+      "filename": "multivitamin-90-tablets-usa-version-core-champs-multivitamin-90-tablets-1-cb6b4626.png",
+      "bytes": 424168
+    },
+    {
+      "id": "nitric-oxide-1",
+      "title": "NITRIC OXIDE image 1",
+      "type": "product",
+      "src": "/media/imported/nitric-oxide-nitric-oxide-transparent-82279edf.png",
+      "filename": "nitric-oxide-nitric-oxide-transparent-82279edf.png",
+      "bytes": 1169670
+    },
+    {
+      "id": "nitric-oxide-2",
+      "title": "NITRIC OXIDE image 2",
+      "type": "product",
+      "src": "/media/imported/nitric-oxide-core-champs-nitrix-oxide-120-tablets-1-356ff1d7.png",
+      "filename": "nitric-oxide-core-champs-nitrix-oxide-120-tablets-1-356ff1d7.png",
+      "bytes": 403276
+    },
+    {
+      "id": "omega-3-usa-version-1",
+      "title": "OMEGA-3 image 1",
+      "type": "product",
+      "src": "/media/imported/omega-3-usa-version-omega-3-transparent-e4d0cc3c-ba20-4b94-8040-da8b21c635-c1be8571.png",
+      "filename": "omega-3-usa-version-omega-3-transparent-e4d0cc3c-ba20-4b94-8040-da8b21c635-c1be8571.png",
+      "bytes": 913437
+    },
+    {
+      "id": "omega-3-usa-version-2",
+      "title": "OMEGA-3 image 2",
+      "type": "product",
+      "src": "/media/imported/omega-3-usa-version-core-champs-omega-1000mg-100-softgels-1-33b1d272.png",
+      "filename": "omega-3-usa-version-core-champs-omega-1000mg-100-softgels-1-33b1d272.png",
+      "bytes": 394610
+    },
+    {
+      "id": "testro-gen-1",
+      "title": "TESTRO GEN image 1",
+      "type": "product",
+      "src": "/media/imported/testro-gen-testro-gen-transparent-756a6a90.png",
+      "filename": "testro-gen-testro-gen-transparent-756a6a90.png",
+      "bytes": 1149323
+    },
+    {
+      "id": "testro-gen-2",
+      "title": "TESTRO GEN image 2",
+      "type": "product",
+      "src": "/media/imported/testro-gen-core-champs-testro-gen-60-tablets-1-792f68f9.png",
+      "filename": "testro-gen-core-champs-testro-gen-60-tablets-1-792f68f9.png",
+      "bytes": 411886
+    },
+    {
+      "id": "rdx-pre-workout-1",
+      "title": "RDX (PRE-WORKOUT) image 1",
+      "type": "product",
+      "src": "/media/imported/rdx-pre-workout-rdx-blue-raspberry-ed8c786b.png",
+      "filename": "rdx-pre-workout-rdx-blue-raspberry-ed8c786b.png",
+      "bytes": 1164377
+    },
+    {
+      "id": "rdx-pre-workout-2",
+      "title": "RDX (PRE-WORKOUT) image 2",
+      "type": "product",
+      "src": "/media/imported/rdx-pre-workout-rdx-watermelon-334c4e25.png",
+      "filename": "rdx-pre-workout-rdx-watermelon-334c4e25.png",
+      "bytes": 1163725
+    },
+    {
+      "id": "shred-n-burn-1",
+      "title": "SHRED-N-BURN image 1",
+      "type": "product",
+      "src": "/media/imported/shred-n-burn-core-champs-shred-n-burn-60-capsules-991d4dd6.png",
+      "filename": "shred-n-burn-core-champs-shred-n-burn-60-capsules-991d4dd6.png",
+      "bytes": 432621
+    },
+    {
+      "id": "shred-n-burn-2",
+      "title": "SHRED-N-BURN image 2",
+      "type": "product",
+      "src": "/media/imported/shred-n-burn-core-champs-shred-n-burn-60-capsules-1-3e330cf5.png",
+      "filename": "shred-n-burn-core-champs-shred-n-burn-60-capsules-1-3e330cf5.png",
+      "bytes": 415684
+    },
+    {
+      "id": "tribulus-1",
+      "title": "TRIBULUS image 1",
+      "type": "product",
+      "src": "/media/imported/tribulus-core-champs-tribulus-750mg-61ff42e0.png",
+      "filename": "tribulus-core-champs-tribulus-750mg-61ff42e0.png",
+      "bytes": 380709
+    },
+    {
+      "id": "tribulus-2",
+      "title": "TRIBULUS image 2",
+      "type": "product",
+      "src": "/media/imported/tribulus-core-champs-tribulus-750mg-side-2-5953e368.png",
+      "filename": "tribulus-core-champs-tribulus-750mg-side-2-5953e368.png",
+      "bytes": 355588
+    },
+    {
+      "id": "whey-2lbs-1",
+      "title": "WHEY PROTEIN 2LBS image 1",
+      "type": "product",
+      "src": "/media/imported/whey-2lbs-corechampswhey2lbs-richchocolate-04803b38.png",
+      "filename": "whey-2lbs-corechampswhey2lbs-richchocolate-04803b38.png",
+      "bytes": 566402
+    },
+    {
+      "id": "whey-2lbs-2",
+      "title": "WHEY PROTEIN 2LBS image 2",
+      "type": "product",
+      "src": "/media/imported/whey-2lbs-corechampswhey2lbs-chocolatepeanutbutter-cd567679.png",
+      "filename": "whey-2lbs-corechampswhey2lbs-chocolatepeanutbutter-cd567679.png",
+      "bytes": 570279
+    },
+    {
+      "id": "whey-1",
+      "title": "WHEY PROTEIN 5LBS image 1",
+      "type": "product",
+      "src": "/media/imported/whey-whey-protein-rich-chocolate-f96700d6.png",
+      "filename": "whey-whey-protein-rich-chocolate-f96700d6.png",
+      "bytes": 1083950
+    },
+    {
+      "id": "whey-2",
+      "title": "WHEY PROTEIN 5LBS image 2",
+      "type": "product",
+      "src": "/media/imported/whey-whey-protein-choco-peanut-butter-2f38d074.png",
+      "filename": "whey-whey-protein-choco-peanut-butter-2f38d074.png",
+      "bytes": 1097745
+    },
+    {
+      "id": "zmb6-1",
+      "title": "ZMB6 image 1",
+      "type": "product",
+      "src": "/media/imported/zmb6-zmb6-transparent-1-bea36527.png",
+      "filename": "zmb6-zmb6-transparent-1-bea36527.png",
+      "bytes": 1106654
+    },
+    {
+      "id": "zmb6-2",
+      "title": "ZMB6 image 2",
+      "type": "product",
+      "src": "/media/imported/zmb6-core-champs-zmb6-60-capsules-1-5ee9a2d7.png",
+      "filename": "zmb6-core-champs-zmb6-60-capsules-1-5ee9a2d7.png",
+      "bytes": 398443
+    },
+    {
+      "id": "core-champs-isolate-100-whey-protein-isolate-2lbs-30-servings-1",
+      "title": "Core Champs Isolate – 100% Whey Protein Isolate | 2lbs | 30 Servings image 1",
+      "type": "product",
+      "src": "/media/imported/core-champs-isolate-100-whey-protein-isolate-2lbs-30-servings-corechampswheyisolate2lbs-birthdaycake-66f21f10.png",
+      "filename": "core-champs-isolate-100-whey-protein-isolate-2lbs-30-servings-corechampswheyisolate2lbs-birthdaycake-66f21f10.png",
+      "bytes": 6875776
+    },
+    {
+      "id": "core-champs-isolate-100-whey-protein-isolate-2lbs-30-servings-2",
+      "title": "Core Champs Isolate – 100% Whey Protein Isolate | 2lbs | 30 Servings image 2",
+      "type": "product",
+      "src": "/media/imported/core-champs-isolate-100-whey-protein-isolate-2lbs-30-servings-core-champs-whey-isolate-2-lbs-caramel-latte-2932e693--cf4b5479.png",
+      "filename": "core-champs-isolate-100-whey-protein-isolate-2lbs-30-servings-core-champs-whey-isolate-2-lbs-caramel-latte-2932e693--cf4b5479.png",
+      "bytes": 6838978
+    },
+    {
+      "id": "crush-summer-champion-style-bundle-1-1",
+      "title": "Crush Summer, Champion Style Bundle image 1",
+      "type": "product",
+      "src": "/media/imported/crush-summer-champion-style-bundle-1-corechamps-summerbundle-1080x1080-1-ab505065.png",
+      "filename": "crush-summer-champion-style-bundle-1-corechamps-summerbundle-1080x1080-1-ab505065.png",
+      "bytes": 1264780
+    },
+    {
+      "id": "crush-summer-champion-style-bundle-1-2",
+      "title": "Crush Summer, Champion Style Bundle image 2",
+      "type": "product",
+      "src": "/media/imported/crush-summer-champion-style-bundle-1-eaa-watermelon-transparent-50974661.png",
+      "filename": "crush-summer-champion-style-bundle-1-eaa-watermelon-transparent-50974661.png",
+      "bytes": 1154685
+    },
+    {
+      "id": "beef-aminos-1",
+      "title": "Beef Aminos image 1",
+      "type": "product",
+      "src": "/media/imported/beef-aminos-corechampsbeefaminos-d3d78a97.png",
+      "filename": "beef-aminos-corechampsbeefaminos-d3d78a97.png",
+      "bytes": 6200910
+    },
+    {
+      "id": "beef-aminos-2",
+      "title": "Beef Aminos image 2",
+      "type": "product",
+      "src": "/media/imported/beef-aminos-corechampsbeefaminos-02-29930018.png",
+      "filename": "beef-aminos-corechampsbeefaminos-02-29930018.png",
+      "bytes": 6467713
+    },
+    {
+      "id": "beta-alanine-1",
+      "title": "BETA-ALANINE image 1",
+      "type": "product",
+      "src": "/media/imported/beta-alanine-core-champs-beta-alanine-100-servings-c894b7ba.png",
+      "filename": "beta-alanine-core-champs-beta-alanine-100-servings-c894b7ba.png",
+      "bytes": 446715
+    },
+    {
+      "id": "beta-alanine-2",
+      "title": "BETA-ALANINE image 2",
+      "type": "product",
+      "src": "/media/imported/beta-alanine-core-champs-beta-alanine-100-servings-side-2-11e1aa08.png",
+      "filename": "beta-alanine-core-champs-beta-alanine-100-servings-side-2-11e1aa08.png",
+      "bytes": 383725
+    },
+    {
+      "id": "site-1",
+      "title": "Site visual 1",
+      "type": "design",
+      "src": "/media/imported/site-core-champs-logo-main-retina-2x-180x107-69fb6e80.png",
+      "filename": "site-core-champs-logo-main-retina-2x-180x107-69fb6e80.png",
+      "bytes": 20571
+    },
+    {
+      "id": "site-2",
+      "title": "Site visual 2",
+      "type": "design",
+      "src": "/media/imported/site-core-champs-web-banner-1903x870-f364cbfc.jpg",
+      "filename": "site-core-champs-web-banner-1903x870-f364cbfc.jpg",
+      "bytes": 281809
+    },
+    {
+      "id": "site-3",
+      "title": "Site visual 3",
+      "type": "design",
+      "src": "/media/imported/site-core-champs-web-banner-d4e8e967.jpg",
+      "filename": "site-core-champs-web-banner-d4e8e967.jpg",
+      "bytes": 663868
+    },
+    {
+      "id": "site-4",
+      "title": "Site visual 4",
+      "type": "design",
+      "src": "/media/imported/site-isolate-delicious-chocolate-transparent-428x538-36cb89e1.png",
+      "filename": "site-isolate-delicious-chocolate-transparent-428x538-36cb89e1.png",
+      "bytes": 187193
+    },
+    {
+      "id": "site-5",
+      "title": "Site visual 5",
+      "type": "design",
+      "src": "/media/imported/site-isolate-caramel-latte-transparent-428x538-58dcaa59.png",
+      "filename": "site-isolate-caramel-latte-transparent-428x538-58dcaa59.png",
+      "bytes": 187830
+    }
+  ],
+  "marketing": {
+    "announcement": "Hot selling products with free shipping",
+    "newsletterTitle": "Sign up for Newsletter",
+    "newsletterBody": "Get training fuel updates, product launches, and promotions.",
+    "banners": [
+      {
+        "id": "banner-1",
+        "title": "Protein is the spice of muscle life.",
+        "cta": "Shop now",
+        "href": "/collections/protein",
+        "image": "/media/imported/site-core-champs-web-banner-1903x870-f364cbfc.jpg"
+      },
+      {
+        "id": "banner-2",
+        "title": "Pre-game rituals for the fitness enthusiast.",
+        "cta": "Shop now",
+        "href": "/collections/pre-workout",
+        "image": "/media/imported/site-core-champs-web-banner-d4e8e967.jpg"
+      },
+      {
+        "id": "banner-3",
+        "title": "BCAAs & EAAs are post-workout essentials.",
+        "cta": "Shop now",
+        "href": "/collections/bcaas-eaas",
+        "image": "/media/imported/site-isolate-delicious-chocolate-transparent-428x538-36cb89e1.png"
+      }
+    ]
+  },
+  "design": {
+    "accentColor": "#e1251b",
+    "theme": "athletic",
+    "logoText": "CORE CHAMPS",
+    "heroTreatment": "full-bleed performance image with strong black/red contrast"
+  },
+  "users": [
+    {
+      "id": "owner",
+      "name": "Store Owner",
+      "email": "owner@corechamps.local",
+      "role": "Administrator",
+      "status": "active"
+    },
+    {
+      "id": "editor",
+      "name": "Content Editor",
+      "email": "editor@corechamps.local",
+      "role": "Catalog Manager",
+      "status": "active"
+    }
+  ],
+  "roles": [
+    {
+      "name": "Administrator",
+      "permissions": [
+        "dashboard",
+        "catalog",
+        "content",
+        "design",
+        "marketing",
+        "media",
+        "settings",
+        "users"
+      ]
+    },
+    {
+      "name": "Catalog Manager",
+      "permissions": [
+        "dashboard",
+        "catalog",
+        "media"
+      ]
+    },
+    {
+      "name": "Content Editor",
+      "permissions": [
+        "dashboard",
+        "content",
+        "marketing",
+        "media"
+      ]
+    }
+  ]
+}
