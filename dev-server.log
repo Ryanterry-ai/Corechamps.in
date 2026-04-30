@@ -1,0 +1,20 @@
+
+> corechamps-standalone@1.0.0 dev
+> next dev -p 3000
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 3s
+ ○ Compiling / ...
+ ✓ Compiled / in 4.4s (568 modules)
+ GET / 200 in 4772ms
+ GET / 200 in 121ms
+ ○ Compiling /collections/[slug] ...
+ ✓ Compiled /collections/[slug] in 1112ms (581 modules)
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 971ms (608 modules)
+ GET /admin 200 in 1208ms
+ ○ Compiling /pages/[slug] ...
+ ✓ Compiled /pages/[slug] in 628ms (615 modules)
