@@ -1,0 +1,128 @@
+// This is your Prisma schema file
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id           String    @id @default(cuid())
+  handle       String    @unique
+  name         String
+  description  String
+  shortDesc    String    @default("")
+  price        Float
+  comparePrice Float?
+  currency     String    @default("INR")
+  images       String    @default("[]") // JSON array
+  categoryId   String?
+  tags         String    @default("[]") // JSON array
+  stock        Int       @default(100)
+  sku          String    @default("")
+  variants     String    @default("[]") // JSON array
+  suggestedUse String    @default("")
+  allergenInfo String    @default("")
+  seoTitle     String    @default("")
+  seoDesc      String    @default("")
+  visible      Boolean   @default(true)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  collection   Collection? @relation(fields: [collectionId], references: [id])
+  collectionId String?
+}
+
+model Collection {
+  id          String    @id @default(cuid())
+  handle      String    @unique
+  name        String
+  description String    @default("")
+  image       String    @default("")
+  seoTitle    String    @default("")
+  seoDesc     String    @default("")
+  visible     Boolean   @default(true)
+  order       Int       @default(0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  products    Product[]
+}
+
+model PageSection {
+  id        String   @id @default(cuid())
+  page      String   @default("home") // home, about, etc.
+  type      String   // hero, category-cards, featured-products, brand-banner, etc.
+  order     Int      @default(0)
+  visible   Boolean  @default(true)
+  content   String   @default("{}") // JSON
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+}
+
+model NavItem {
+  id        String    @id @default(cuid())
+  menu      String    @default("main") // main, footer, mobile
+  label     String
+  url       String
+  type      String    @default("internal") // internal, external, collection, product
+  order     Int       @default(0)
+  parentId  String?
+  visible   Boolean   @default(true)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model SiteSettings {
+  id               String  @id @default("main")
+  siteName         String  @default("CORE CHAMPS")
+  tagline          String  @default("BRED TO BE A CHAMPION!")
+  logo             String  @default("")
+  favicon          String  @default("")
+  currency         String  @default("INR")
+  currencySymbol   String  @default("₹")
+  email            String  @default("info@corechamps.com")
+  phone            String  @default("+91 00000 00000")
+  address          String  @default("")
+  facebookUrl      String  @default("")
+  instagramUrl     String  @default("")
+  twitterUrl       String  @default("")
+  youtubeUrl       String  @default("")
+  announcementText String  @default("Free Shipping on Orders Above ₹999!")
+  announcementLink String  @default("/collections/all")
+  announcementShow Boolean @default(true)
+  seoTitle         String  @default("CORE CHAMPS | Bred To Be A Champion")
+  seoDesc          String  @default("Science-based sports nutrition supplements for muscle building, performance and recovery.")
+  primaryColor     String  @default("#FF6B00")
+  secondaryColor   String  @default("#1a1a1a")
+  updatedAt        DateTime @updatedAt
+}
+
+model MediaAsset {
+  id         String   @id @default(cuid())
+  filename   String
+  url        String
+  alt        String   @default("")
+  width      Int      @default(0)
+  height     Int      @default(0)
+  size       Int      @default(0)
+  type       String   @default("image") // image, video
+  uploadedAt DateTime @default(now())
+}
+
+model AdminUser {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String   // bcrypt hash
+  createdAt DateTime @default(now())
+}
+
+model PublishLog {
+  id        String   @id @default(cuid())
+  entity    String   // settings, section, product, etc.
+  entityId  String
+  action    String   @default("publish")
+  snapshot  String   @default("{}") // JSON snapshot
+  createdAt DateTime @default(now())
+}
