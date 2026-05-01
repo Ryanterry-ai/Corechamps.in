@@ -1,14 +1,69 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo } from "react";
+import { useRouter } from "next/navigation";
+import { useMemo, useState } from "react";
+import { ShoppingCart, Zap } from "lucide-react";
 import { formatMoney } from "@/lib/data";
 import { useCms } from "@/lib/cms-store";
 import type { Product } from "@/lib/types";
 
-function HomeMiniCard({ product, currency }: { product: Product; currency: string }) {
-  const imagePrimary = product.images[0]?.src;
+function pickImageForVariant(product: Product, variantTitle?: string) {
+  if (!product.images.length) return undefined;
+  if (!variantTitle || variantTitle.toLowerCase() === "default title") {
+    return product.images[0]?.src;
+  }
+
+  const haystacks = product.images.map((image) =>
+    `${image.alt || ""} ${image.src}`.toLowerCase()
+  );
+  const tokens = variantTitle
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .split(" ")
+    .filter((token) => token.length > 2);
+
+  let bestIndex = 0;
+  let bestScore = 0;
+
+  haystacks.forEach((haystack, index) => {
+    const score = tokens.reduce(
+      (total, token) => total + (haystack.includes(token) ? 1 : 0),
+      0
+    );
+    if (score > bestScore) {
+      bestScore = score;
+      bestIndex = index;
+    }
+  });
+
+  return product.images[bestScore > 0 ? bestIndex : 0]?.src;
+}
+
+function HomeMiniCard({
+  product,
+  currency,
+  addToCartAndMaybeCheckout
+}: {
+  product: Product;
+  currency: string;
+  addToCartAndMaybeCheckout: (
+    product: Product,
+    variantId: string | undefined,
+    buyNow: boolean
+  ) => void;
+}) {
+  const [variantId, setVariantId] = useState(product.variants[0]?.id);
+  const selectedVariant = useMemo(
+    () => product.variants.find((entry) => entry.id === variantId) || product.variants[0],
+    [product.variants, variantId]
+  );
+
+  const imagePrimary =
+    pickImageForVariant(product, selectedVariant?.title) || product.images[0]?.src;
   const imageSecondary = product.images[1]?.src;
+  const price = selectedVariant?.price || product.price;
+  const canBuy = product.available && (selectedVariant?.available ?? true);
 
   return (
     <article className="group">
@@ -52,15 +107,52 @@ function HomeMiniCard({ product, currency }: { product: Product; currency: strin
           {product.title}
         </Link>
         <p className="mt-2 text-[16px] font-semibold text-[#cf3845] sm:text-[32px]">
-          {formatMoney(product.price, currency)}
+          {formatMoney(price, currency)}
         </p>
+
+        {product.variants.length > 1 ? (
+          <label className="mx-auto mt-3 block max-w-[260px] text-left">
+            <span className="text-[11px] font-bold uppercase tracking-[0.12em] text-black/60">
+              Flavor / Size
+            </span>
+            <select
+              value={variantId}
+              onChange={(event) => setVariantId(event.target.value)}
+              className="focus-ring mt-2 h-10 w-full border border-black/20 px-2 text-[12px] font-medium uppercase"
+            >
+              {product.variants.map((variant) => (
+                <option key={variant.id} value={variant.id}>
+                  {variant.title}
+                </option>
+              ))}
+            </select>
+          </label>
+        ) : null}
+
+        <div className="mx-auto mt-3 grid max-w-[260px] grid-cols-2 gap-2">
+          <button
+            className="focus-ring inline-flex h-10 items-center justify-center gap-1 bg-black px-3 text-[11px] font-bold uppercase tracking-[0.06em] text-white disabled:cursor-not-allowed disabled:bg-black/25"
+            disabled={!canBuy}
+            onClick={() => addToCartAndMaybeCheckout(product, selectedVariant?.id, false)}
+          >
+            <ShoppingCart size={14} /> Add
+          </button>
+          <button
+            className="focus-ring inline-flex h-10 items-center justify-center gap-1 bg-[#cf3845] px-3 text-[11px] font-bold uppercase tracking-[0.06em] text-white disabled:cursor-not-allowed disabled:bg-black/25"
+            disabled={!canBuy}
+            onClick={() => addToCartAndMaybeCheckout(product, selectedVariant?.id, true)}
+          >
+            <Zap size={14} /> Buy Now
+          </button>
+        </div>
       </div>
     </article>
   );
 }
 
 export function StorefrontHome() {
-  const { data } = useCms();
+  const router = useRouter();
+  const { data, addToCart } = useCms();
 
   const heroSlides =
     (data.settings.heroSlides || []).filter((slide) => slide.image || slide.video) || [];
@@ -185,7 +277,7 @@ export function StorefrontHome() {
                   <span className="text-[30px] font-bold uppercase tracking-[0.02em] text-white lg:text-[44px]">
                     {tile.label}
                   </span>
-                  <span className="text-[44px] leading-none text-white lg:text-[56px]">→</span>
+                  <span className="text-[44px] leading-none text-white lg:text-[56px]">&rarr;</span>
                 </div>
               </div>
             </Link>
@@ -216,6 +308,27 @@ export function StorefrontHome() {
                   key={`${section.id}-${product.slug}`}
                   product={product}
                   currency={data.settings.currency}
+                  addToCartAndMaybeCheckout={(entry, variantId, buyNow) => {
+                    const variant =
+                      entry.variants.find((variantEntry) => variantEntry.id === variantId) ||
+                      entry.variants[0];
+                    const image =
+                      pickImageForVariant(entry, variant?.title) || entry.images[0]?.src;
+
+                    addToCart({
+                      slug: entry.slug,
+                      variantId: variant?.id,
+                      title: entry.title,
+                      variantTitle: variant?.title,
+                      price: variant?.price || entry.price,
+                      image,
+                      quantity: 1
+                    });
+
+                    if (buyNow) {
+                      router.push("/cart");
+                    }
+                  }}
                 />
               ))}
             </div>
@@ -236,3 +349,4 @@ export function StorefrontHome() {
     </>
   );
 }
+

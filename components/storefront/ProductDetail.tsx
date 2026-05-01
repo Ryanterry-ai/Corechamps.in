@@ -1,10 +1,43 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Minus, Plus, ShoppingCart } from "lucide-react";
 import { useCms } from "@/lib/cms-store";
 import { formatMoney } from "@/lib/data";
+import type { Product } from "@/lib/types";
+
+function pickImageForVariant(product: Product, variantTitle?: string) {
+  if (!product.images.length) return undefined;
+  if (!variantTitle || variantTitle.toLowerCase() === "default title") {
+    return product.images[0]?.src;
+  }
+
+  const haystacks = product.images.map((image) =>
+    `${image.alt || ""} ${image.src}`.toLowerCase()
+  );
+  const tokens = variantTitle
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .split(" ")
+    .filter((token) => token.length > 2);
+
+  let bestIndex = 0;
+  let bestScore = 0;
+
+  haystacks.forEach((haystack, index) => {
+    const score = tokens.reduce(
+      (total, token) => total + (haystack.includes(token) ? 1 : 0),
+      0
+    );
+    if (score > bestScore) {
+      bestScore = score;
+      bestIndex = index;
+    }
+  });
+
+  return product.images[bestScore > 0 ? bestIndex : 0]?.src;
+}
 
 export function ProductDetail({ slug }: { slug: string }) {
   const { data, addToCart } = useCms();
@@ -16,6 +49,12 @@ export function ProductDetail({ slug }: { slug: string }) {
     () => product?.variants.find((entry) => entry.id === variantId) || product?.variants[0],
     [product, variantId]
   );
+
+  useEffect(() => {
+    if (!product) return;
+    const mapped = pickImageForVariant(product, variant?.title);
+    if (mapped) setActiveImage(mapped);
+  }, [product, variant?.id, variant?.title]);
 
   if (!product) {
     return (
