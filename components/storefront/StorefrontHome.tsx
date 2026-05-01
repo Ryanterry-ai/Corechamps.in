@@ -136,27 +136,6 @@ export function StorefrontHome() {
     [getProductsBySlugs]
   );
 
-  const lifestyleCards = [
-    {
-      title: "Protein is the spice of muscle life.",
-      subtitle: "Protein: The secret ingredient to muscle magic.",
-      href: "/collections/protein",
-      image: "/media/imported/site-corechamps-banner-2-1903x870.png"
-    },
-    {
-      title: "Pre-game rituals for the fitness enthusiast.",
-      subtitle: "Pre-workout: The turbo boost for your fitness journey.",
-      href: "/collections/pre-workout",
-      image: "/media/imported/site-core-champs-pre-workout-supplements-kai-green-1903x870.png"
-    },
-    {
-      title: "BCAAs & EAAs are my post-workout bestie.",
-      subtitle: "Amino acids: The secret sauce for muscle growth.",
-      href: "/collections/bcaas-eaas",
-      image: "/media/imported/site-core-champs-eaa-1903x870.png"
-    }
-  ];
-
   const categoryTiles = [
     {
       label: "FAT BURNERS",
@@ -188,30 +167,6 @@ export function StorefrontHome() {
       </section>
 
       <section className="bg-[#f1f1f1] py-8 lg:py-10">
-        <div className="container-wide grid gap-4 md:grid-cols-3 lg:gap-6">
-          {lifestyleCards.map((card) => (
-            <Link key={card.title} href={card.href} className="group relative block overflow-hidden">
-              <div className="relative h-[420px] lg:h-[860px]">
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/70" />
-                <div className="absolute left-8 right-8 top-10 text-white">
-                  <h3 className="max-w-[420px] text-[32px] font-normal leading-[1.25] tracking-[0.01em] lg:text-[52px]">
-                    {card.title}
-                  </h3>
-                  <p className="mt-4 text-[17px] text-white/85">{card.subtitle}</p>
-                  <span className="mt-6 inline-block border-b border-[#cf3845] pb-1 text-[32px] font-medium uppercase tracking-[0.04em] text-[#cf3845] lg:text-[38px]">
-                    Shop now
-                  </span>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-
         <div className="container-wide mt-6 grid gap-4 md:grid-cols-3 lg:gap-6">
           {categoryTiles.map((tile) => (
             <Link key={tile.label} href={tile.href} className="group relative block overflow-hidden bg-[#111318]">
