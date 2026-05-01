@@ -48,11 +48,11 @@ function HomeMiniCard({ product, currency }: { product: Product; currency: strin
       <div className="px-2 pb-2 text-center">
         <Link
           href={`/products/${product.slug}`}
-          className="line-clamp-2 min-h-[44px] text-[35px] font-medium uppercase tracking-[0.03em] text-[#3a3a3a] hover:text-black"
+          className="line-clamp-2 min-h-[40px] text-[15px] font-medium uppercase tracking-[0.02em] text-[#3a3a3a] hover:text-black sm:text-[35px]"
         >
           {product.title}
         </Link>
-        <p className="mt-2 text-[34px] font-semibold text-[#cf3845]">
+        <p className="mt-2 text-[13px] font-semibold text-[#cf3845] sm:text-[34px]">
           {formatMoney(product.price, currency)}
         </p>
       </div>
@@ -157,13 +157,13 @@ export function StorefrontHome() {
       <section className="bg-[#ececec] py-16 sm:py-20">
         <div className="container-wide">
           <div className="mb-10 text-center">
-            <h2 className="text-[23px] font-medium capitalize tracking-[0.01em] text-[#232323] sm:text-[66px]">
+            <h2 className="text-[15px] font-medium capitalize tracking-[0.01em] text-[#232323] sm:text-[23px] lg:text-[66px]">
               Hot Selling Products with Free Shipping
             </h2>
-            <p className="mt-2 text-[14px] text-[#4f4f4f] sm:text-[34px]">Hot off the shelves! Grab it before it&apos;s gone</p>
+            <p className="mt-2 text-[12px] text-[#4f4f4f] sm:text-[16px] lg:text-[34px]">Hot off the shelves! Grab it before it&apos;s gone</p>
           </div>
 
-          <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:gap-x-10 lg:grid-cols-4">
             {proteinProducts.map((product) => (
               <HomeMiniCard
                 key={`protein-${product.slug}`}
@@ -178,13 +178,13 @@ export function StorefrontHome() {
       <section className="bg-white py-16 sm:py-20">
         <div className="container-wide">
           <div className="mb-10 text-center">
-            <h2 className="text-[23px] font-medium capitalize tracking-[0.01em] text-[#232323] sm:text-[64px]">
+            <h2 className="text-[15px] font-medium capitalize tracking-[0.01em] text-[#232323] sm:text-[23px] lg:text-[64px]">
               Pre workout supplements
             </h2>
-            <p className="mt-2 text-[14px] text-[#4f4f4f] sm:text-[34px]">Premium Supplements Brand</p>
+            <p className="mt-2 text-[12px] text-[#4f4f4f] sm:text-[16px] lg:text-[34px]">Premium Supplements Brand</p>
           </div>
 
-          <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:gap-x-10 lg:grid-cols-4">
             {preworkoutProducts.map((product) => (
               <HomeMiniCard
                 key={`preworkout-${product.slug}`}
