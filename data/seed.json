@@ -38,61 +38,206 @@
     "email": "sales@corechamps.com",
     "phone": "+1-802-227-2721",
     "address": "1013, Centre Road, Wilmington, Delaware 19805",
-    "currency": "USD",
+    "currency": "INR",
     "taxRate": 0,
     "shippingFlatRate": 0,
     "heroTitle": "CORE CHAMPS",
     "heroSubtitle": "Bred to be a champion",
-    "heroBody": "Science-based sports nutrition for protein, pre-workout, recovery, and daily performance.",
-    "heroImage": "/media/imported/site-core-champs-logo-main-retina-2x-180x107-69fb6e80.png"
+    "heroBody": "Science-based sports nutrition supplements for muscle building, performance, recovery, and healthy lifestyle support.",
+    "heroImage": "/media/imported/site-core-champs-web-banner-1903x870-f364cbfc.jpg",
+    "logoImage": "/media/imported/site-core-champs-logo-main-retina-2x-180x107-69fb6e80.png",
+    "heroSlides": [
+      {
+        "id": "hero-1",
+        "image": "/media/imported/site-core-champs-web-banner-1903x870-f364cbfc.jpg",
+        "title": "Hot Selling Products with Free Shipping",
+        "subtitle": "Hot off the shelves! Grab it before it's gone",
+        "ctaLabel": "Shop Now",
+        "ctaHref": "/collections/protein"
+      },
+      {
+        "id": "hero-2",
+        "image": "/media/imported/site-corechamps-banner-2-1903x870.png",
+        "ctaLabel": "Shop Now",
+        "ctaHref": "/collections/all"
+      },
+      {
+        "id": "hero-3",
+        "image": "/media/imported/site-core-champs-pre-workout-supplements-kai-green-1903x870.png",
+        "ctaLabel": "Shop Now",
+        "ctaHref": "/collections/all"
+      },
+      {
+        "id": "hero-4",
+        "image": "/media/imported/site-core-champs-eaa-1903x870.png",
+        "ctaLabel": "Shop Now",
+        "ctaHref": "/collections/all"
+      }
+    ]
   },
   "navigation": {
     "primary": [
       {
-        "label": "Home",
+        "label": "HOME",
         "href": "/"
       },
       {
-        "label": "Supplements",
-        "href": "/collections/protein"
+        "label": "SUPPLEMENTS",
+        "href": "/collections/protein",
+        "children": [
+          {
+            "label": "AGMATINE 750MG",
+            "href": "/products/agmatine-750mg"
+          },
+          {
+            "label": "BCAA POWDER 7000 MG",
+            "href": "/products/bcaa-powder-7000-mg"
+          },
+          {
+            "label": "CLA (CONJUGATED LINOLEIC ACID)",
+            "href": "/products/cla-conjugated-linoleic-acid"
+          },
+          {
+            "label": "CREATINE 5000MG",
+            "href": "/products/creatine-5000mg"
+          },
+          {
+            "label": "EAA (ESSENTIAL AMINO ACIDS)",
+            "href": "/products/eaa-essential-amino-acids"
+          },
+          {
+            "label": "GLUTAMINE",
+            "href": "/products/glutamine"
+          },
+          {
+            "label": "ISOLATE WHEY 2LBS",
+            "href": "/products/isolate-whey-2lbs"
+          },
+          {
+            "label": "ISOLATE WHEY 4.41LBS",
+            "href": "/products/isolate-whey"
+          },
+          {
+            "label": "JOINT SUPPORT",
+            "href": "/products/joint-support"
+          },
+          {
+            "label": "L-ARGININE 1000MG",
+            "href": "/products/l-arginine-1000mg"
+          },
+          {
+            "label": "L-CARNITINE 3000MG",
+            "href": "/products/l-carnitine-3000-new-packing"
+          },
+          {
+            "label": "L-CITRULLINE",
+            "href": "/products/l-citrulline"
+          },
+          {
+            "label": "LIVER SUPPORT",
+            "href": "/products/liver-support"
+          },
+          {
+            "label": "MASS GAINER 6 LBS",
+            "href": "/products/mass-gainer-6-lbs"
+          },
+          {
+            "label": "MASS GAINER 15 LBS",
+            "href": "/products/mass-gainer-15-lbs"
+          },
+          {
+            "label": "MULTIVITAMIN 90 TABLETS",
+            "href": "/products/multivitamin-90-tablets-usa-version"
+          },
+          {
+            "label": "NITRIC OXIDE",
+            "href": "/products/nitric-oxide"
+          },
+          {
+            "label": "OMEGA-3",
+            "href": "/products/omega-3-usa-version"
+          },
+          {
+            "label": "TESTRO GEN",
+            "href": "/products/testro-gen"
+          },
+          {
+            "label": "RDX (PRE-WORKOUT)",
+            "href": "/products/rdx-pre-workout"
+          },
+          {
+            "label": "SHRED-N-BURN",
+            "href": "/products/shred-n-burn"
+          },
+          {
+            "label": "TRIBULUS",
+            "href": "/products/tribulus"
+          },
+          {
+            "label": "WHEY PROTEIN 2LBS",
+            "href": "/products/whey-2lbs"
+          },
+          {
+            "label": "WHEY PROTEIN 5LBS",
+            "href": "/products/whey"
+          },
+          {
+            "label": "ZMB6",
+            "href": "/products/zmb6"
+          }
+        ]
       },
       {
-        "label": "Categories",
-        "href": "/collections/muscle-building"
+        "label": "CATEGORIES",
+        "href": "/collections/muscle-building",
+        "children": [
+          {
+            "label": "Muscle Building",
+            "href": "/collections/muscle-building"
+          },
+          {
+            "label": "Energy & Performance",
+            "href": "/collections/pre-workout"
+          },
+          {
+            "label": "Weight Management",
+            "href": "/collections/weight-management"
+          },
+          {
+            "label": "Recovery",
+            "href": "/collections/recovery"
+          },
+          {
+            "label": "Healthy Lifestyle",
+            "href": "/collections/healthy-wellness"
+          }
+        ]
       },
       {
-        "label": "Authenticity Check",
+        "label": "AUTHENTICITY CHECK",
         "href": "/pages/global-presence"
       }
     ],
     "categories": [
       {
-        "label": "Protein",
+        "label": "PROTEIN",
         "href": "/collections/protein"
       },
       {
-        "label": "Muscle Building",
-        "href": "/collections/muscle-building"
-      },
-      {
-        "label": "Energy & Performance",
+        "label": "PRE-WORKOUT",
         "href": "/collections/pre-workout"
       },
       {
-        "label": "Weight Management",
-        "href": "/collections/weight-management"
-      },
-      {
-        "label": "Recovery",
+        "label": "POST WORKOUT",
         "href": "/collections/recovery"
       },
       {
-        "label": "Healthy Lifestyle",
-        "href": "/collections/healthy-wellness"
+        "label": "WEIGHT LOSS",
+        "href": "/collections/weight-management"
       },
       {
-        "label": "BCAAs & EAAs",
-        "href": "/collections/bcaas-eaas"
+        "label": "HEALTHY LIFESTYLE",
+        "href": "/collections/healthy-wellness"
       }
     ],
     "footer": [
@@ -3610,7 +3755,7 @@
     }
   ],
   "marketing": {
-    "announcement": "Hot selling products with free shipping",
+    "announcement": "Hot Selling Products with Free Shipping",
     "newsletterTitle": "Sign up for Newsletter",
     "newsletterBody": "Get training fuel updates, product launches, and promotions.",
     "banners": [

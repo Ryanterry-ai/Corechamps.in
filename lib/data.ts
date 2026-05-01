@@ -4,7 +4,8 @@ import type { Collection, ContentPage, Product, StoreData } from "@/lib/types";
 export const seed = seedData as StoreData;
 
 export function formatMoney(value: number, currency = seed.settings.currency) {
-  return new Intl.NumberFormat("en-US", {
+  const locale = currency === "INR" ? "en-IN" : "en-US";
+  return new Intl.NumberFormat(locale, {
     style: "currency",
     currency
   }).format(value || 0);

@@ -3,13 +3,53 @@
 @tailwind utilities;
 
 :root {
-  --font-sans: Inter, Arial, sans-serif;
-  --font-display: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --font-sans: "Roboto", Arial, sans-serif;
+  --font-display: "Jost", "Roboto", Arial, sans-serif;
   color-scheme: light;
 }
 
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-400.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/Jost-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -19,7 +59,10 @@ html {
 body {
   margin: 0;
   background: #ffffff;
-  color: #111111;
+  color: #232323;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 a {
@@ -80,6 +123,19 @@ textarea {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes subtleZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.045);
+  }
+}
+
+.hero-zoom {
+  animation: subtleZoom 5.4s ease-out both;
 }
 
 @media (prefers-reduced-motion: reduce) {

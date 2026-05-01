@@ -59,6 +59,17 @@ export type ContentPage = {
 export type NavigationItem = {
   label: string;
   href: string;
+  children?: NavigationItem[];
+};
+
+export type HeroSlide = {
+  id: string;
+  title?: string;
+  subtitle?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
+  image?: string;
+  video?: string;
 };
 
 export type Role = {
@@ -102,6 +113,8 @@ export type StoreData = {
     heroSubtitle: string;
     heroBody: string;
     heroImage: string;
+    logoImage?: string;
+    heroSlides?: HeroSlide[];
   };
   navigation: {
     primary: NavigationItem[];

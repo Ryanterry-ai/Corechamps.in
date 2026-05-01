@@ -1,179 +1,207 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Dumbbell, ShieldCheck, Sparkles, Truck } from "lucide-react";
-import { ProductCard } from "@/components/storefront/ProductCard";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { formatMoney } from "@/lib/data";
 import { useCms } from "@/lib/cms-store";
+import type { Product } from "@/lib/types";
+
+function HomeMiniCard({ product, currency }: { product: Product; currency: string }) {
+  const imagePrimary = product.images[0]?.src;
+  const imageSecondary = product.images[1]?.src;
+
+  return (
+    <article className="group">
+      <Link href={`/products/${product.slug}`} className="block">
+        <div className="relative bg-transparent px-4 pb-5 pt-2">
+          <div className="relative mx-auto h-[280px] w-full overflow-hidden sm:h-[320px]">
+            {imagePrimary ? (
+              <img
+                src={imagePrimary}
+                alt={product.title}
+                className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 ${
+                  imageSecondary ? "group-hover:opacity-0" : "group-hover:scale-105"
+                }`}
+              />
+            ) : null}
+
+            {imageSecondary ? (
+              <img
+                src={imageSecondary}
+                alt={product.title}
+                className="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              />
+            ) : null}
+
+            {!product.available ? (
+              <span className="absolute right-[14%] top-[40%] inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#cf3845]/85 text-center text-xs font-semibold uppercase tracking-[0.02em] text-white">
+                Out of
+                <br />
+                stock
+              </span>
+            ) : null}
+          </div>
+        </div>
+      </Link>
+
+      <div className="px-2 pb-2 text-center">
+        <Link
+          href={`/products/${product.slug}`}
+          className="line-clamp-2 min-h-[44px] text-[35px] font-medium uppercase tracking-[0.03em] text-[#3a3a3a] hover:text-black"
+        >
+          {product.title}
+        </Link>
+        <p className="mt-2 text-[34px] font-semibold text-[#cf3845]">
+          {formatMoney(product.price, currency)}
+        </p>
+      </div>
+    </article>
+  );
+}
 
 export function StorefrontHome() {
   const { data } = useCms();
-  const heroProducts = data.products.filter((product) => product.status === "published").slice(0, 8);
-  const muscle = data.collections.find((collection) => collection.slug === "muscle-building");
-  const healthy = data.collections.find((collection) => collection.slug === "healthy-wellness");
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const heroSlides =
+    (data.settings.heroSlides || []).filter((slide) => slide.image || slide.video) || [];
+
+  const proteinCollection = data.collections.find((collection) => collection.slug === "protein");
+  const preworkoutCollection = data.collections.find(
+    (collection) => collection.slug === "pre-workout"
+  );
+
+  const proteinProducts = useMemo(
+    () =>
+      (proteinCollection?.productSlugs || [])
+        .map((slug) => data.products.find((product) => product.slug === slug))
+        .filter(Boolean)
+        .slice(0, 4) as Product[],
+    [data.products, proteinCollection?.productSlugs]
+  );
+
+  const preworkoutProducts = useMemo(
+    () =>
+      (preworkoutCollection?.productSlugs || [])
+        .map((slug) => data.products.find((product) => product.slug === slug))
+        .filter(Boolean)
+        .slice(0, 4) as Product[],
+    [data.products, preworkoutCollection?.productSlugs]
+  );
+
+  useEffect(() => {
+    if (heroSlides.length <= 1) return;
+    const timer = window.setInterval(() => {
+      setSlideIndex((current) => (current + 1) % heroSlides.length);
+    }, 5000);
+    return () => window.clearInterval(timer);
+  }, [heroSlides.length]);
 
   return (
     <>
-      <section className="relative min-h-[calc(100svh-112px)] overflow-hidden bg-ink text-white">
-        {data.settings.heroImage ? (
-          <img
-            src={data.settings.heroImage}
-            alt=""
-            className="absolute inset-0 h-full w-full object-cover opacity-70"
-          />
-        ) : null}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/10" />
-        <div className="container-wide relative flex min-h-[calc(100svh-112px)] items-center py-16">
-          <div className="max-w-2xl animate-[fadeIn_.7s_ease-out]">
-            <p className="mb-4 text-sm font-black uppercase tracking-[0.28em] text-ember">
-              {data.settings.tagline}
-            </p>
-            <h1 className="font-display text-6xl uppercase leading-[0.86] sm:text-8xl lg:text-[8.5rem]">
-              {data.settings.heroTitle}
-            </h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-white/80">
-              {data.settings.heroBody}
-            </p>
-            <div className="mt-9 flex flex-wrap gap-3">
-              <Link
-                href="/collections/protein"
-                className="focus-ring inline-flex items-center gap-2 bg-ember px-6 py-4 text-sm font-black uppercase text-white"
-              >
-                Shop supplements <ArrowRight size={18} />
-              </Link>
-              <Link
-                href="/admin"
-                className="focus-ring inline-flex items-center gap-2 border border-white/30 px-6 py-4 text-sm font-black uppercase text-white hover:bg-white hover:text-ink"
-              >
-                Open CMS
-              </Link>
-            </div>
-          </div>
-        </div>
+      <section className="relative h-[160px] overflow-hidden bg-black sm:h-[300px] lg:h-[560px]">
+        {heroSlides.length > 0
+          ? heroSlides.map((slide, index) => {
+              const active = index === slideIndex;
+              const hasVideo =
+                typeof slide.video === "string" && /\.(mp4|webm|ogg)$/i.test(slide.video);
+
+              return (
+                <div
+                  key={slide.id || `${index}`}
+                  className={`absolute inset-0 transition-opacity duration-700 ${
+                    active ? "opacity-100" : "opacity-0"
+                  }`}
+                  aria-hidden={!active}
+                >
+                  {hasVideo ? (
+                    <video
+                      className="h-full w-full object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                    >
+                      <source src={slide.video} />
+                    </video>
+                  ) : slide.image ? (
+                    <img
+                      src={slide.image}
+                      alt={slide.title || "Core Champs banner"}
+                      className={`h-full w-full object-cover ${active ? "hero-zoom" : ""}`}
+                    />
+                  ) : null}
+                </div>
+              );
+            })
+          : null}
+
+        <button
+          className="focus-ring absolute left-4 top-1/2 z-20 -translate-y-1/2 text-white/75 hover:text-white"
+          onClick={() => setSlideIndex((current) => (current - 1 + heroSlides.length) % heroSlides.length)}
+          aria-label="Previous slide"
+        >
+          <ChevronLeft size={24} />
+        </button>
+        <button
+          className="focus-ring absolute right-4 top-1/2 z-20 -translate-y-1/2 text-white/75 hover:text-white"
+          onClick={() => setSlideIndex((current) => (current + 1) % heroSlides.length)}
+          aria-label="Next slide"
+        >
+          <ChevronRight size={24} />
+        </button>
       </section>
 
-      <section className="border-y border-black/10 bg-white">
-        <div className="container-wide grid gap-px bg-black/10 md:grid-cols-4">
-          {[
-            ["Free shipping focus", Truck],
-            ["Science-based nutrition", Sparkles],
-            ["Training essentials", Dumbbell],
-            ["Authenticity support", ShieldCheck]
-          ].map(([label, Icon]) => (
-            <div key={String(label)} className="flex items-center gap-3 bg-white py-5">
-              <Icon className="text-ember" size={22} />
-              <span className="text-sm font-black uppercase">{String(label)}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section-pad">
+      <section className="bg-[#ececec] py-16 sm:py-20">
         <div className="container-wide">
-          <div className="mb-10 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-            <div>
-              <p className="text-sm font-black uppercase tracking-[0.2em] text-ember">
-                Hot selling products
-              </p>
-              <h2 className="mt-3 font-display text-5xl uppercase leading-none">
-                Free shipping favorites
-              </h2>
-            </div>
-            <Link
-              href="/collections/protein"
-              className="inline-flex items-center gap-2 text-sm font-black uppercase hover:text-ember"
-            >
-              View all <ArrowRight size={17} />
-            </Link>
+          <div className="mb-10 text-center">
+            <h2 className="text-[23px] font-medium capitalize tracking-[0.01em] text-[#232323] sm:text-[66px]">
+              Hot Selling Products with Free Shipping
+            </h2>
+            <p className="mt-2 text-[14px] text-[#4f4f4f] sm:text-[34px]">Hot off the shelves! Grab it before it&apos;s gone</p>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {heroProducts.map((product) => (
-              <ProductCard key={product.slug} product={product} />
+
+          <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+            {proteinProducts.map((product) => (
+              <HomeMiniCard
+                key={`protein-${product.slug}`}
+                product={product}
+                currency={data.settings.currency}
+              />
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-ink text-white">
-        <div className="container-wide grid gap-8 py-16 lg:grid-cols-3">
-          {data.marketing.banners.map((banner) => (
-            <Link
-              key={banner.id}
-              href={banner.href}
-              className="group relative min-h-80 overflow-hidden bg-black"
-            >
-              {banner.image ? (
-                <img
-                  src={banner.image}
-                  alt=""
-                  className="absolute inset-0 h-full w-full object-cover opacity-70 transition duration-500 group-hover:scale-105"
-                />
-              ) : null}
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-6">
-                <h3 className="font-display text-4xl uppercase leading-none">
-                  {banner.title}
-                </h3>
-                <p className="mt-4 inline-flex items-center gap-2 text-sm font-black uppercase text-ember">
-                  {banner.cta} <ArrowRight size={17} />
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section className="section-pad bg-white">
-        <div className="container-wide grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-          <div>
-            <p className="text-sm font-black uppercase tracking-[0.2em] text-ember">
-              {muscle?.title || "Muscle Building"}
-            </p>
-            <h2 className="mt-3 font-display text-6xl uppercase leading-none">
-              Bred to be a champion
+      <section className="bg-white py-16 sm:py-20">
+        <div className="container-wide">
+          <div className="mb-10 text-center">
+            <h2 className="text-[23px] font-medium capitalize tracking-[0.01em] text-[#232323] sm:text-[64px]">
+              Pre workout supplements
             </h2>
-            <p className="mt-5 text-lg leading-8 text-black/65">
-              {muscle?.subtitle ||
-                "Protein, mass gainer, and performance staples built around focused training."}
-            </p>
+            <p className="mt-2 text-[14px] text-[#4f4f4f] sm:text-[34px]">Premium Supplements Brand</p>
+          </div>
+
+          <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+            {preworkoutProducts.map((product) => (
+              <HomeMiniCard
+                key={`preworkout-${product.slug}`}
+                product={product}
+                currency={data.settings.currency}
+              />
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
             <Link
-              href="/collections/muscle-building"
-              className="mt-8 inline-flex items-center gap-2 bg-ink px-6 py-4 text-sm font-black uppercase text-white hover:bg-ember"
+              href="/collections/pre-workout"
+              className="inline-flex items-center border border-[#cf3845] px-6 py-3 text-[33px] font-medium uppercase tracking-[0.04em] text-[#cf3845] hover:bg-[#cf3845] hover:text-white"
             >
-              Shop muscle building <ArrowRight size={18} />
+              View All
             </Link>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2">
-            {(muscle?.productSlugs || [])
-              .map((slug) => data.products.find((product) => product.slug === slug))
-              .filter(Boolean)
-              .slice(0, 4)
-              .map((product) => (
-                <ProductCard key={product!.slug} product={product!} />
-              ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-steel py-16">
-        <div className="container-wide grid gap-8 md:grid-cols-[1fr_1.2fr] md:items-center">
-          <div>
-            <p className="text-sm font-black uppercase tracking-[0.2em] text-ember">
-              {healthy?.title || "Healthy Lifestyle"}
-            </p>
-            <h2 className="mt-3 font-display text-5xl uppercase leading-none">
-              Daily support for hard training
-            </h2>
-          </div>
-          <form className="flex flex-col gap-3 sm:flex-row">
-            <input
-              className="focus-ring min-h-14 flex-1 border border-black/15 bg-white px-4"
-              placeholder="Enter your email"
-              type="email"
-            />
-            <button className="focus-ring min-h-14 bg-ember px-7 text-sm font-black uppercase text-white">
-              Subscribe
-            </button>
-          </form>
         </div>
       </section>
     </>

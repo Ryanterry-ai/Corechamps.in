@@ -15,6 +15,101 @@ const CMS_KEY = "corechamps-cms-data";
 const CART_KEY = "corechamps-cart";
 const seed = seedData as StoreData;
 
+function ensureStoreData(input: StoreData): StoreData {
+  const products = input.products || [];
+  const collections = input.collections || [];
+
+  const supplementChildren = products
+    .filter((product) => product.status === "published")
+    .slice(0, 24)
+    .map((product) => ({
+      label: product.title.toUpperCase(),
+      href: `/products/${product.slug}`
+    }));
+
+  const categoryChildren = collections
+    .slice(0, 7)
+    .map((collection) => ({ label: collection.title, href: `/collections/${collection.slug}` }));
+
+  const fallbackPrimary = [
+    { label: "HOME", href: "/" },
+    { label: "SUPPLEMENTS", href: "/collections/protein", children: supplementChildren },
+    { label: "CATEGORIES", href: "/collections/muscle-building", children: categoryChildren },
+    { label: "AUTHENTICITY CHECK", href: "/pages/global-presence" }
+  ];
+
+  const fallbackCategories = [
+    { label: "PROTEIN", href: "/collections/protein" },
+    { label: "PRE-WORKOUT", href: "/collections/pre-workout" },
+    { label: "POST WORKOUT", href: "/collections/recovery" },
+    { label: "WEIGHT LOSS", href: "/collections/weight-management" },
+    { label: "HEALTHY LIFESTYLE", href: "/collections/healthy-wellness" }
+  ];
+
+  const importedBanners = (input.media || [])
+    .filter(
+      (asset) =>
+        typeof asset.src === "string" &&
+        asset.src.includes("/media/imported/") &&
+        /banner|core-champs|pre-workout|eaa/i.test(asset.src)
+    )
+    .slice(0, 6);
+
+  const baseSlides =
+    (input.settings.heroSlides || []).filter((slide) => slide.image || slide.video) ||
+    [];
+
+  const generatedSlides =
+    baseSlides.length > 0
+      ? baseSlides
+      : importedBanners.map((asset, index) => ({
+          id: `hero-${index + 1}`,
+          image: asset.src,
+          title: index === 0 ? "Hot Selling Products with Free Shipping" : undefined,
+          subtitle:
+            index === 0 ? "Hot off the shelves! Grab it before it's gone" : undefined,
+          ctaLabel: "Shop Now",
+          ctaHref: "/collections/protein"
+        }));
+
+  return {
+    ...input,
+    settings: {
+      ...input.settings,
+      currency: "INR",
+      logoImage:
+        input.settings.logoImage ||
+        "/media/imported/site-core-champs-logo-main-retina-2x-180x107-69fb6e80.png",
+      heroSlides: generatedSlides
+    },
+    navigation: {
+      ...input.navigation,
+      primary:
+        input.navigation.primary && input.navigation.primary.length > 0
+          ? input.navigation.primary.map((item) => {
+              if (
+                item.label.toUpperCase() === "SUPPLEMENTS" &&
+                (!item.children || item.children.length === 0)
+              ) {
+                return { ...item, children: supplementChildren };
+              }
+              if (
+                item.label.toUpperCase() === "CATEGORIES" &&
+                (!item.children || item.children.length === 0)
+              ) {
+                return { ...item, children: categoryChildren };
+              }
+              return item;
+            })
+          : fallbackPrimary,
+      categories:
+        input.navigation.categories && input.navigation.categories.length > 0
+          ? input.navigation.categories
+          : fallbackCategories
+    }
+  };
+}
+
 type CmsContextValue = {
   data: StoreData;
   cart: CartLine[];
@@ -85,11 +180,11 @@ export function createBlankProduct(): Product {
 }
 
 export function CmsProvider({ children }: { children: React.ReactNode }) {
-  const [data, setData] = useState<StoreData>(seed);
+  const [data, setData] = useState<StoreData>(ensureStoreData(seed));
   const [cart, setCart] = useState<CartLine[]>([]);
 
   useEffect(() => {
-    setData(readStorage(CMS_KEY, seed));
+    setData(ensureStoreData(readStorage(CMS_KEY, seed)));
     setCart(readStorage(CART_KEY, []));
   }, []);
 
@@ -106,14 +201,14 @@ export function CmsProvider({ children }: { children: React.ReactNode }) {
   }, [cart]);
 
   const resetCms = useCallback(() => {
-    setData(seed);
+    setData(ensureStoreData(seed));
     if (typeof window !== "undefined") {
       window.localStorage.removeItem(CMS_KEY);
     }
   }, []);
 
   const importCms = useCallback((nextData: StoreData) => {
-    setData(nextData);
+    setData(ensureStoreData(nextData));
   }, []);
 
   const updateSettings = useCallback((settings: Partial<StoreData["settings"]>) => {
