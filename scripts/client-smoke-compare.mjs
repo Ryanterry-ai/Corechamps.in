@@ -23,6 +23,12 @@ async function stripOverlays(page) {
       ".needsclick",
       ".shopify-pc__banner",
       ".shopify-pc__floating-banner",
+      ".fancybox-container",
+      ".fancybox-overlay",
+      "[class*='popup']",
+      "[class*='modal']",
+      "[id*='popup']",
+      "[id*='modal']",
       "iframe[src*='judge']",
       "iframe[src*='klaviyo']",
       "#dummy-chat-button-iframe",
@@ -41,6 +47,33 @@ async function stripOverlays(page) {
           el.remove();
         }
       });
+
+    // Remove marketing/signup overlays that can randomly appear on the original site.
+    Array.from(document.querySelectorAll("div,section,aside"))
+      .filter((el) => {
+        const text = (el.textContent || "").toLowerCase();
+        if (!text.includes("unlock 10% off") && !text.includes("sign me up")) return false;
+        const style = window.getComputedStyle(el);
+        return (
+          style.position === "fixed" ||
+          style.position === "sticky" ||
+          Number(style.zIndex || "0") > 200
+        );
+      })
+      .forEach((el) => {
+        el.remove();
+      });
+
+    document.querySelectorAll("*").forEach((el) => {
+      const style = window.getComputedStyle(el);
+      const rect = el.getBoundingClientRect();
+      const isLargeBlockingLayer =
+        (style.position === "fixed" || style.position === "sticky") &&
+        Number(style.zIndex || "0") > 500 &&
+        rect.width > window.innerWidth * 0.6 &&
+        rect.height > window.innerHeight * 0.3;
+      if (isLargeBlockingLayer) el.remove();
+    });
   });
 }
 

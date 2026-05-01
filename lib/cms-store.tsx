@@ -19,13 +19,37 @@ function ensureStoreData(input: StoreData): StoreData {
   const products = input.products || [];
   const collections = input.collections || [];
 
-  const supplementChildren = products
-    .filter((product) => product.status === "published")
-    .slice(0, 24)
-    .map((product) => ({
-      label: product.title.toUpperCase(),
-      href: `/products/${product.slug}`
-    }));
+  const canonicalSupplements = [
+    ["AGMATINE 750MG", "agmatine-750mg"],
+    ["BCAA POWDER 7000 MG", "bcaa-powder-7000-mg"],
+    ["CLA (CONJUGATED LINOLEIC ACID)", "cla-conjugated-linoleic-acid"],
+    ["CREATINE 5000MG", "creatine-5000mg"],
+    ["EAA (ESSENTIAL AMINO ACIDS)", "eaa-essential-amino-acids"],
+    ["GLUTAMINE", "glutamine"],
+    ["ISOLATE WHEY 2LBS", "isolate-whey-2lbs"],
+    ["ISOLATE WHEY 4LBS", "isolate-whey"],
+    ["JOINT SUPPORT", "joint-support"],
+    ["L-ARGININE 1000MG", "l-arginine-1000mg"],
+    ["L-CARNITINE 3000MG", "l-carnitine-3000-new-packing"],
+    ["L-CITRULLINE", "l-citrulline"],
+    ["LIVER SUPPORT", "liver-support"],
+    ["MASS GAINER 6 LBS", "mass-gainer-6-lbs"],
+    ["MASS GAINER 15 LBS", "mass-gainer-15-lbs"],
+    ["MULTIVITAMIN 90 TABLETS", "multivitamin-90-tablets-usa-version"],
+    ["NITRIC OXIDE", "nitric-oxide"],
+    ["OMEGA-3", "omega-3-usa-version"],
+    ["TESTRO GEN", "testro-gen"],
+    ["RDX (PRE-WORKOUT)", "rdx-pre-workout"],
+    ["SHRED-N-BURN", "shred-n-burn"],
+    ["TRIBULUS", "tribulus"],
+    ["WHEY 2LBS", "whey-2lbs"],
+    ["WHEY 5LBS", "whey"],
+    ["ZMB6", "zmb6"]
+  ] as const;
+
+  const supplementChildren = canonicalSupplements
+    .filter(([, slug]) => products.some((product) => product.slug === slug))
+    .map(([label, slug]) => ({ label, href: `/products/${slug}` }));
 
   const categoryChildren = collections
     .slice(0, 7)
@@ -87,16 +111,10 @@ function ensureStoreData(input: StoreData): StoreData {
       primary:
         input.navigation.primary && input.navigation.primary.length > 0
           ? input.navigation.primary.map((item) => {
-              if (
-                item.label.toUpperCase() === "SUPPLEMENTS" &&
-                (!item.children || item.children.length === 0)
-              ) {
+              if (item.label.toUpperCase() === "SUPPLEMENTS") {
                 return { ...item, children: supplementChildren };
               }
-              if (
-                item.label.toUpperCase() === "CATEGORIES" &&
-                (!item.children || item.children.length === 0)
-              ) {
+              if (item.label.toUpperCase() === "CATEGORIES") {
                 return { ...item, children: categoryChildren };
               }
               return item;

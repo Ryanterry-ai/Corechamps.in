@@ -5,6 +5,7 @@ import {
   ChevronDown,
   ChevronRight,
   Heart,
+  Mail,
   Menu,
   Search,
   ShoppingCart,
@@ -23,16 +24,22 @@ export function Header() {
     [cart]
   );
 
+  const supplements = useMemo(
+    () => data.navigation.primary.find((item) => item.label.toUpperCase() === "SUPPLEMENTS"),
+    [data.navigation.primary]
+  );
+  const supplementColumns = useMemo(() => {
+    const children = supplements?.children || [];
+    const half = Math.ceil(children.length / 2);
+    return [children.slice(0, half), children.slice(half)];
+  }, [supplements?.children]);
+
   return (
     <header className="sticky top-0 z-40 border-b border-white/15 bg-[#0a0a0d] text-white">
-      <div className="border-b border-white/10 bg-[#08090c] py-2 text-[11px] font-semibold uppercase tracking-[0.14em]">
+      <div className="border-b border-white/10 bg-[#08090c] py-2.5 text-[13px] font-normal tracking-[0.08em]">
         <div className="container-wide flex justify-center">
-          <div className="flex flex-wrap items-center gap-2 text-white/75">
-            <span>UNITED STATES</span>
-            <span className="text-white/35">|</span>
-            <span>EUROPE</span>
-            <span className="text-white/35">|</span>
-            <span>MIDDLE EAST &amp; ASIA</span>
+          <div className="text-center text-[#ce465b]">
+            Website is availabe for SALE with 1 Year Support | WhatsApp us to buy +91 9205073017
           </div>
         </div>
       </div>
@@ -40,7 +47,7 @@ export function Header() {
       <div className="hidden border-b border-white/10 py-3 text-[12px] font-medium sm:block">
         <div className="container-wide flex flex-wrap items-center justify-between gap-3">
           <div className="hidden items-center gap-2 text-white/70 sm:flex">
-            <span className="text-ember">✉</span>
+            <Mail size={13} className="text-ember" />
             <span>{data.settings.email}</span>
           </div>
           <div className="ml-auto flex items-center gap-5 text-white/70">
@@ -66,30 +73,50 @@ export function Header() {
           )}
         </Link>
 
-        <nav className="hidden items-center gap-8 text-[13px] font-semibold uppercase tracking-[0.04em] lg:flex">
+        <nav className="hidden items-center gap-7 text-[13px] font-semibold uppercase tracking-[0.04em] lg:flex">
           {data.navigation.primary.map((item) => (
             <div key={item.href} className="group relative">
               <Link
                 href={item.href}
-                className="inline-flex items-center gap-1.5 py-8 text-[13px] text-white/85 hover:text-white"
+                className={`inline-flex items-center gap-1.5 px-4 py-8 text-[13px] text-white/85 hover:text-white ${
+                  item.children && item.children.length > 0 ? "group-hover:bg-[#cf3845]" : ""
+                }`}
               >
                 {item.label}
                 {item.children && item.children.length > 0 ? <ChevronDown size={13} /> : null}
               </Link>
 
               {item.children && item.children.length > 0 ? (
-                <div className="pointer-events-none absolute left-0 top-full z-50 min-w-[320px] border border-white/15 bg-[#121419] p-3 opacity-0 shadow-xl transition group-hover:pointer-events-auto group-hover:opacity-100">
-                  <div className="grid gap-1">
-                    {item.children.map((child) => (
-                      <Link
-                        key={`${item.label}-${child.href}`}
-                        href={child.href}
-                        className="px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-white/80 hover:bg-white/10 hover:text-white"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
+                <div className="pointer-events-none absolute left-0 top-full z-50 w-[820px] border border-white/20 bg-black/90 p-4 opacity-0 shadow-2xl transition group-hover:pointer-events-auto group-hover:opacity-100">
+                  {item.label.toUpperCase() === "SUPPLEMENTS" ? (
+                    <div className="grid grid-cols-2 gap-x-14">
+                      {supplementColumns.map((column, index) => (
+                        <div key={`supplement-col-${index}`} className="grid gap-1">
+                          {column.map((child) => (
+                            <Link
+                              key={`${item.label}-${child.href}`}
+                              href={child.href}
+                              className="px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.07em] text-white/90 hover:text-ember"
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="grid gap-1">
+                      {item.children.map((child) => (
+                        <Link
+                          key={`${item.label}-${child.href}`}
+                          href={child.href}
+                          className="px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.07em] text-white/90 hover:text-ember"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ) : null}
             </div>
@@ -103,6 +130,13 @@ export function Header() {
             aria-label="Search products"
           >
             <Search size={18} />
+          </Link>
+          <Link
+            href="/pages/global-presence"
+            className="focus-ring hidden h-10 w-10 items-center justify-center text-white/70 hover:text-ember sm:flex"
+            aria-label="Wishlist"
+          >
+            <Heart size={18} />
           </Link>
           <Link
             href="/admin"
@@ -123,13 +157,6 @@ export function Header() {
               </span>
             ) : null}
           </Link>
-          <button
-            className="focus-ring flex h-10 w-10 items-center justify-center border border-white/25 text-white lg:hidden"
-            onClick={() => setOpen((value) => !value)}
-            aria-label="Menu"
-          >
-            {open ? <X size={20} /> : <Menu size={20} />}
-          </button>
         </div>
       </div>
 
@@ -205,7 +232,7 @@ export function Header() {
                       <Link
                         key={`${item.label}-${child.href}`}
                         href={child.href}
-                        className="py-2 text-black/75"
+                        className="py-2 text-white/75"
                         onClick={() => setOpen(false)}
                       >
                         {child.label}
