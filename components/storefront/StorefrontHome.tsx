@@ -151,6 +151,11 @@ export function StorefrontHome() {
       label: "MUSCLE BUILDERS",
       href: "/collections/muscle-building",
       image: "/media/imported/eaa-essential-amino-acids-eaa-fruit-punch-transparent-5e647c5e.png"
+    },
+    {
+      label: "HEALTH & WELLNESS",
+      href: "/collections/healthy-wellness",
+      image: "/media/imported/multivitamin-90-tablets-usa-version-multi-vitamin-transparent-b9d1261b.png"
     }
   ];
 
@@ -167,17 +172,17 @@ export function StorefrontHome() {
       </section>
 
       <section className="bg-[#f1f1f1] py-8 lg:py-10">
-        <div className="container-wide mt-6 grid gap-4 md:grid-cols-3 lg:gap-6">
+        <div className="container-wide mt-6 grid gap-5 md:grid-cols-2 lg:gap-7 xl:grid-cols-4">
           {categoryTiles.map((tile) => (
             <Link key={tile.label} href={tile.href} className="group relative block overflow-hidden bg-[#111318]">
-              <div className="relative h-[340px] lg:h-[520px]">
+              <div className="relative h-[380px] lg:h-[600px]">
                 <img
                   src={tile.image}
                   alt={tile.label}
-                  className="h-full w-full object-contain p-6 transition duration-500 group-hover:scale-[1.03]"
+                  className="h-full w-full object-contain p-7 transition duration-500 group-hover:scale-[1.03]"
                 />
                 <div className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-black/72 px-6 py-4">
-                  <span className="text-[28px] font-bold uppercase tracking-[0.02em] text-white lg:text-[42px]">
+                  <span className="text-[30px] font-bold uppercase tracking-[0.02em] text-white lg:text-[44px]">
                     {tile.label}
                   </span>
                   <span className="text-[44px] leading-none text-white lg:text-[56px]">→</span>
