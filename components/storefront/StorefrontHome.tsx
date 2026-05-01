@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { formatMoney } from "@/lib/data";
 import { useCms } from "@/lib/cms-store";
 import type { Product } from "@/lib/types";
@@ -62,10 +61,10 @@ function HomeMiniCard({ product, currency }: { product: Product; currency: strin
 
 export function StorefrontHome() {
   const { data } = useCms();
-  const [slideIndex, setSlideIndex] = useState(0);
 
   const heroSlides =
     (data.settings.heroSlides || []).filter((slide) => slide.image || slide.video) || [];
+  const primaryHero = heroSlides[0];
 
   const getProductsBySlugs = useMemo(
     () => (slugs: string[]) =>
@@ -137,68 +136,101 @@ export function StorefrontHome() {
     [getProductsBySlugs]
   );
 
-  useEffect(() => {
-    if (heroSlides.length <= 1) return;
-    const timer = window.setInterval(() => {
-      setSlideIndex((current) => (current + 1) % heroSlides.length);
-    }, 5000);
-    return () => window.clearInterval(timer);
-  }, [heroSlides.length]);
+  const lifestyleCards = [
+    {
+      title: "Protein is the spice of muscle life.",
+      subtitle: "Protein: The secret ingredient to muscle magic.",
+      href: "/collections/protein",
+      image: "/media/imported/site-corechamps-banner-2-1903x870.png"
+    },
+    {
+      title: "Pre-game rituals for the fitness enthusiast.",
+      subtitle: "Pre-workout: The turbo boost for your fitness journey.",
+      href: "/collections/pre-workout",
+      image: "/media/imported/site-core-champs-pre-workout-supplements-kai-green-1903x870.png"
+    },
+    {
+      title: "BCAAs & EAAs are my post-workout bestie.",
+      subtitle: "Amino acids: The secret sauce for muscle growth.",
+      href: "/collections/bcaas-eaas",
+      image: "/media/imported/site-core-champs-eaa-1903x870.png"
+    }
+  ];
+
+  const categoryTiles = [
+    {
+      label: "FAT BURNERS",
+      href: "/collections/weight-management",
+      image: "/media/imported/shred-n-burn-core-champs-shred-n-burn-60-capsules-991d4dd6.png"
+    },
+    {
+      label: "PRE-WORKOUTS",
+      href: "/collections/pre-workout",
+      image: "/media/imported/rdx-pre-workout-rdx-blue-raspberry-ed8c786b.png"
+    },
+    {
+      label: "MUSCLE BUILDERS",
+      href: "/collections/muscle-building",
+      image: "/media/imported/eaa-essential-amino-acids-eaa-fruit-punch-transparent-5e647c5e.png"
+    }
+  ];
 
   return (
     <>
       <section className="relative h-[160px] overflow-hidden bg-black sm:h-[300px] lg:h-[600px]">
-        {heroSlides.length > 0
-          ? heroSlides.map((slide, index) => {
-              const active = index === slideIndex;
-              const hasVideo =
-                typeof slide.video === "string" && /\.(mp4|webm|ogg)$/i.test(slide.video);
+        {primaryHero?.image ? (
+          <img
+            src={primaryHero.image}
+            alt={primaryHero.title || "Core Champs banner"}
+            className="h-full w-full object-cover"
+          />
+        ) : null}
+      </section>
 
-              return (
-                <div
-                  key={slide.id || `${index}`}
-                  className={`absolute inset-0 transition-opacity duration-700 ${
-                    active ? "opacity-100" : "opacity-0"
-                  }`}
-                  aria-hidden={!active}
-                >
-                  {hasVideo ? (
-                    <video
-                      className="h-full w-full object-cover"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      preload="metadata"
-                    >
-                      <source src={slide.video} />
-                    </video>
-                  ) : slide.image ? (
-                    <img
-                      src={slide.image}
-                      alt={slide.title || "Core Champs banner"}
-                      className={`h-full w-full object-cover ${active ? "hero-zoom" : ""}`}
-                    />
-                  ) : null}
+      <section className="bg-[#f1f1f1] py-8 lg:py-10">
+        <div className="container-wide grid gap-4 md:grid-cols-3 lg:gap-6">
+          {lifestyleCards.map((card) => (
+            <Link key={card.title} href={card.href} className="group relative block overflow-hidden">
+              <div className="relative h-[420px] lg:h-[860px]">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/70" />
+                <div className="absolute left-8 right-8 top-10 text-white">
+                  <h3 className="max-w-[420px] text-[32px] font-normal leading-[1.25] tracking-[0.01em] lg:text-[52px]">
+                    {card.title}
+                  </h3>
+                  <p className="mt-4 text-[17px] text-white/85">{card.subtitle}</p>
+                  <span className="mt-6 inline-block border-b border-[#cf3845] pb-1 text-[32px] font-medium uppercase tracking-[0.04em] text-[#cf3845] lg:text-[38px]">
+                    Shop now
+                  </span>
                 </div>
-              );
-            })
-          : null}
+              </div>
+            </Link>
+          ))}
+        </div>
 
-        <button
-          className="focus-ring absolute left-4 top-1/2 z-20 -translate-y-1/2 text-white/75 hover:text-white"
-          onClick={() => setSlideIndex((current) => (current - 1 + heroSlides.length) % heroSlides.length)}
-          aria-label="Previous slide"
-        >
-          <ChevronLeft size={24} />
-        </button>
-        <button
-          className="focus-ring absolute right-4 top-1/2 z-20 -translate-y-1/2 text-white/75 hover:text-white"
-          onClick={() => setSlideIndex((current) => (current + 1) % heroSlides.length)}
-          aria-label="Next slide"
-        >
-          <ChevronRight size={24} />
-        </button>
+        <div className="container-wide mt-6 grid gap-4 md:grid-cols-3 lg:gap-6">
+          {categoryTiles.map((tile) => (
+            <Link key={tile.label} href={tile.href} className="group relative block overflow-hidden bg-[#111318]">
+              <div className="relative h-[340px] lg:h-[520px]">
+                <img
+                  src={tile.image}
+                  alt={tile.label}
+                  className="h-full w-full object-contain p-6 transition duration-500 group-hover:scale-[1.03]"
+                />
+                <div className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-black/72 px-6 py-4">
+                  <span className="text-[28px] font-bold uppercase tracking-[0.02em] text-white lg:text-[42px]">
+                    {tile.label}
+                  </span>
+                  <span className="text-[44px] leading-none text-white lg:text-[56px]">→</span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
       </section>
 
       {homepageSections.map((section) => (

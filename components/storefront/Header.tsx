@@ -38,7 +38,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-white/15 bg-[#0a0a0d] text-white">
       <div className="border-b border-white/10 bg-[#08090c] py-2.5 text-[13px] font-normal tracking-[0.08em]">
         <div className="container-wide flex justify-center">
-          <div className="text-center text-[#ce465b]">
+          <div className="text-center font-bold text-yellow-400">
             Website is availabe for SALE with 1 Year Support | WhatsApp us to buy +91 9205073017
           </div>
         </div>
